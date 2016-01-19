@@ -491,6 +491,11 @@
 	"column_name_10": "HIERARCHY",
 	"data_type": "int"
 }, {
+	"column_name": "hierarchy",
+	"column_name_10": "HIERARCHY",
+	"table_names": ["hy_hierarchy"],
+	"data_type": "character varying(6)"
+}, {
 	"column_name": "hierarchy_code",
 	"column_name_10": "HIERARCHYC",
 	"data_type": "character varying(1)"
