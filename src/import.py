@@ -16,8 +16,8 @@ if __name__ == "__main__":
         'folder', help='Name of subfolder or VicMap dataset, eg VMADMIN')
     parser.add_argument(
         'dataset', nargs='?', help='Optional specific dataset from subfolder, eg lga_polygon. If omitted whole folder will be imported.')
-    parser.add_argument('--leave_public', action='store_true', default=False,
-                        help='Whether temporary tables should be left intact for debugging')
+    parser.add_argument('--recreate', action='store_true', default=False,
+                        help='Forces dropping any existing tables and recreating. Be careful!')
     args = parser.parse_args()
 
     folder = args.folder.lower()
@@ -25,12 +25,12 @@ if __name__ == "__main__":
         dataset = args.dataset.lower()
     else:
         dataset = None
-    leave_public = args.leave_public
+    recreate = args.recreate
     print "Importing from {}".format(folder.upper())
     if dataset:
         print "  Dataset: {}".format(dataset.upper())
-    if leave_public:
-        print "  Temporary tables will be left intact!"
+    if recreate:
+        print "  Existing table definitions will be removed!"
 
     datasets = []
     if dataset:
@@ -52,6 +52,7 @@ if __name__ == "__main__":
         print d
 
     i = Importer(Database())
+    i.recreate = recreate
 
     for idx, d in enumerate(datasets):
         print "\n\nImporting {}/{}: {}\n-------------".format(idx + 1, len(datasets), d)

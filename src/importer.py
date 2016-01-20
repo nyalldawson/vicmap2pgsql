@@ -10,18 +10,26 @@ class Importer():
 
     def __init__(self, db):
         self.db = db
+        self.recreate = False
 
         with open('datasets\\column_mappings.json') as mappings:
             self.columnMappings = json.load(mappings)
 
+        with open('datasets\\table_mappings.json') as mappings:
+            self.tableMappings = json.load(mappings)
+
     def importLayer(self, path, schema, table):
         """ Imports the specified layer """
 
-        self.importLayerUsingOGR(path, 'public', table)
+        self.importLayerUsingOGR(path, 'public', schema, table)
 
         if not self.db.schemaExists(schema):
             print "Existing schema {} does not exist".format(schema)
             self.db.createSchema(schema)
+
+        if self.recreate:
+            # Possibly should drop cascaded, but that's dangerous...
+            self.db.dropTable(schema, table)
 
         if not self.db.tableExists(schema, table):
             print "Existing destination table {}.{} does not exist".format(schema, table)
@@ -33,6 +41,8 @@ class Importer():
         assert self.copyData('public', table, schema,
                              table), 'Could not copy data'
 
+        self.db.vacuum(schema, table)
+
         count = self.db.recordCount(schema, table)
         print 'Copied {} records to destination table'.format(count)
         assert count > 0, 'No records exist in destination table!'
@@ -42,11 +52,22 @@ class Importer():
 
         return True
 
-    def importLayerUsingOGR(self, path, schema, table):
+    def isMulti(self, schema, table):
+        """ Returns whether a table should have MULTI* geometry type """
+        matched_map = [m for m in self.tableMappings if m['dataset'].upper(
+        ) == schema.upper() and m['table'].upper() == table.upper()]
+        if not len(matched_map) == 1:
+            return False
+        if 'force_multi' in matched_map[0].keys() and matched_map[0]['force_multi']:
+            return True
+        else:
+            return False
+
+    def importLayerUsingOGR(self, path, temp_schema, schema, table):
         """ Imports a given layer to PostGIS using OGR2OGR"""
 
         # Drop table if exists
-        self.db.dropTable(schema, table)
+        self.db.dropTable(temp_schema, table)
 
         ogr2ogr_args = [os.getenv('OGR2OGR', 'C:\\OSGeo4W64\\bin\\ogr2ogr.exe'),
                         '--config',
@@ -62,6 +83,23 @@ class Importer():
         print 'Importing from {}'.format(path)
         if path[-3:] == 'shp':
             print 'Uploading shapefile to PostGIS...'
+
+            # Determine whether file should be imported as multipolygons/lines
+            if self.isMulti(schema, table):
+                ogr2ogr_args.extend(['-nlt', 'PROMOTE_TO_MULTI'])
+
+            # calculate CRS transform
+            # reproject from GDA94 to Vicgrid
+            ogr2ogr_args.extend(['-s_srs', 'epsg:4283', '-t_srs', 'epsg:3111'])
+
+            ogr2ogr_args.extend(['-lco',
+                                 'GEOMETRY_NAME=geom',  # geometry column is 'geom', not that rubbish the_geom default
+                                 '-lco',
+                                 # no spatial index for temporary table, it's
+                                 # only temporary and we want fastest copy
+                                 # possible
+                                 'SPATIAL_INDEX=OFF',
+                                 ])
         else:
             # dbf file
             print 'Uploading DBF to PostGIS...'
@@ -70,7 +108,7 @@ class Importer():
         ogr2ogr_args.extend([
             path,  # source table
             '-nln',
-            '{}.{}'.format(schema, table)]
+            '{}.{}'.format(temp_schema, table)]
         )
 
         subprocess.call(ogr2ogr_args)  # run OGR2OGR import
@@ -112,6 +150,7 @@ class Importer():
         ufi_index = -1
         pk_index = -1
         min_pk_priority = 999
+        geom_col = None
         for i, c in enumerate(self.db.getTableColumnDefs(temp_schema, temp_table)):
             extra_defs = ''
 
@@ -121,11 +160,15 @@ class Importer():
             if c['name'] == 'ufi':
                 ufi_index = i - 1
 
+            if c['name'] == 'geom':
+                dest_columns.append(['geom', self.geometryColumnDefinition(
+                    temp_schema, temp_table, dest_schema, dest_table), ''])
+                geom_col = 'geom'
+                continue
+
             matched_map = self.getMappedColumnDef(
                 dest_schema, dest_table, c['name'])
-            if not matched_map:
-                print "could not match: {}".format(c)
-                return False
+            assert matched_map, "could not match: {}".format(c)
 
             if 'primary_key_priority' in matched_map:
                 current_pk_priority = matched_map['primary_key_priority']
@@ -144,7 +187,18 @@ class Importer():
             # move ufi to start of list
             dest_columns.insert(0, dest_columns.pop(ufi_index))
 
-        return self.db.createTable(dest_schema, dest_table, dest_columns)
+        assert self.db.createTable(
+            dest_schema, dest_table, dest_columns), "Could not create table {}.{}".format(dest_schema, dest_table)
+
+        if geom_col:
+            # Add spatial index
+            self.db.createSpatialIndex(dest_schema, dest_table, geom_col)
+
+    def geometryColumnDefinition(self, temp_schema, temp_table, dest_schema, dest_table):
+        """ Calculates the definition for a layer's geometry column """
+
+        # Get definition of existing geometry column
+        return self.db.getGeometryColumnDef(temp_schema, temp_table, 'geom')
 
     def copyData(self, temp_schema, temp_table, dest_schema, dest_table):
         """ Copies the data from the temporary import table to the destination table, applying transforms as required """
@@ -153,6 +207,11 @@ class Importer():
         dest_cols = []
 
         for c in self.db.getTableColumnDefs(temp_schema, temp_table):
+            if c['name'] == 'geom':
+                source_cols.append('geom')
+                dest_cols.append('geom')
+                continue
+
             matched_map = self.getMappedColumnDef(
                 dest_schema, dest_table, c['name'])
             if not matched_map:
@@ -168,4 +227,5 @@ class Importer():
                 c['name'], matched_map['data_type']))
             dest_cols.append(matched_map['column_name'])
 
+        print 'Copying data to destination table'
         return self.db.copyData(temp_schema, temp_table, source_cols, dest_schema, dest_table, dest_cols)

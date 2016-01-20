@@ -50,6 +50,10 @@ class Database():
         """Encodes a schema name to a safe string to use in a query"""
         return '"{}"'.format(schema)
 
+    def encodeColumnName(self, column):
+        """Encodes a column name to a safe string to use in a query"""
+        return '"{}"'.format(column)
+
     def fetchSqlRecords(self, sql):
         """Executes a SQL query and returns the result rows"""
         cursor = self.c.cursor()
@@ -94,11 +98,15 @@ class Database():
         """
         col_definition = ','.join(
             ['"{}" {} {}'.format(c[0], c[1], c[2]) for c in cols])
+
         return self.runSql('CREATE TABLE {} ({})'.format(self.encodeTableName(schema, table), col_definition))
 
-    def dropTable(self, schema, table):
+    def dropTable(self, schema, table, cascade=False):
         """ Drops a table from the database """
-        return self.runSql('DROP TABLE IF EXISTS {}'.format(self.encodeTableName(schema, table)))
+        if cascade:
+            return self.runSql('DROP TABLE IF EXISTS {} CASCADE'.format(self.encodeTableName(schema, table)))
+        else:
+            return self.runSql('DROP TABLE IF EXISTS {}'.format(self.encodeTableName(schema, table)))
 
     def truncateTable(self, schema, table):
         """ Truncates a table from the database """
@@ -109,6 +117,15 @@ class Database():
         src_columns = self.fetchSqlRecords(
             "select c.column_name, data_type, character_maximum_length, numeric_precision, numeric_scale from information_schema.columns c where c.table_schema = '{}' and c.table_name='{}'".format(schema, table))
         return [dict(zip(('name', 'type', 'max_length', 'precision', 'scale'), c)) for c in src_columns]
+
+    def getGeometryColumnDef(self, schema, table, column):
+        """ Returns the definition of a geometry column """
+        defs = self.fetchSqlRecords(
+            "select type, srid from geometry_columns where f_table_schema='{}' and f_table_name='{}' and f_geometry_column='{}'".format(schema, table, column))
+        if not len(defs) == 1:
+            return None
+
+        return 'geometry({},{})'.format(defs[0][0], defs[0][1])
 
     def recordCount(self, schema, table):
         """ Returns the number of rows in a table """
@@ -131,6 +148,15 @@ class Database():
     def createSchema(self, schema):
         """Creates a schema"""
         return self.runSql('CREATE SCHEMA IF NOT EXISTS {}'.format(self.encodeSchemaName(schema)))
+
+    def createSpatialIndex(self, schema, table, column):
+        """Creates a spatial index on a geometry column"""
+        index_name = '{}_{}_idx'.format(table, column)
+        return self.runSql('CREATE INDEX {} ON {} USING gist ({})'.format(index_name, self.encodeTableName(schema, table), self.encodeColumnName(column)))
+
+    def vacuum(self, schema, table):
+        """Vacuums a table"""
+        return self.runSqlNoTransaction('VACUUM ANALYSE {}'.format(self.encodeTableName(schema, table)))
 
     def closeConnection(self):
         self.c.close()
