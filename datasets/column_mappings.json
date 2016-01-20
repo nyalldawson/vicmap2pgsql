@@ -1,1457 +1,1918 @@
-[{
-	"column_name": "access_type_code",
-	"column_name_10": "ACCESSTYCD",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "access_type",
-	"column_name_10": "ACCESSTYPE",
-	"data_type": "text"
-}, {
-	"column_name": "accessory_lot",
-	"column_name_10": "ACCSS_LOT",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "act",
-	"column_name_10": "ACT",
-	"data_type": "text"
-}, {
-	"column_name": "address_point",
-	"column_name_10": "ADDRESS_PT",
-	"data_type": "text"
-}, {
-	"column_name": "address_class",
-	"column_name_10": "ADD_CLASS",
-	"data_type": "text"
-}, {
-	"column_name": "address_class_code",
-	"column_name_10": "ADD_CLASSC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "agd66_lat",
-	"column_name_10": "AGD66_LAT",
-	"data_type": "real"
-}, {
-	"column_name": "agd66_long",
-	"column_name_10": "AGD66_LONG",
-	"data_type": "real"
-}, {
-	"column_name": "alternate_locality",
-	"column_name_10": "ALTLOC",
-	"data_type": "text"
-}, {
-	"column_name": "alternate_locality_id",
-	"column_name_10": "ALTLOCID",
-	"data_type": "integer"
-}, {
-	"column_name": "amg_east",
-	"column_name_10": "AMG_EAST",
-	"data_type": "real"
-}, {
-	"column_name": "amg_north",
-	"column_name_10": "AMG_NORTH",
-	"data_type": "real"
-}, {
-	"column_name": "annotation_text",
-	"column_name_10": "ANNO_TXT",
-	"data_type": "text"
-}, {
-	"column_name": "app_multi_lot_footprint",
-	"column_name_10": "APMLFOOTPT",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "app_plan_description",
-	"column_name_10": "APPLANDESC",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "attr_reli_date",
-	"column_name_10": "ATTRELDT",
-	"data_type": "date"
-}, {
-	"column_name": "auth_org_code",
-	"column_name_10": "AUTHORGC",
-	"data_type": "character varying(4)"
-}, {
-	"column_name": "auth_org_id",
-	"column_name_10": "AUTHORGID",
-	"data_type": "text"
-}, {
-	"column_name": "auth_org_longname",
-	"column_name_10": "AUTHORGNAM",
-	"data_type": "text"
-}, {
-	"column_name": "auth_org_verified",
-	"column_name_10": "AUTHORGVER",
-	"data_type": "date"
-}, {
-	"column_name": "auth_org",
-	"column_name_10": "AUTH_ORG",
-	"data_type": "text"
-}, {
-	"column_name": "beacon_present",
-	"column_name_10": "BEACN_PRES",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "beacon_type",
-	"column_name_10": "BEACN_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "beaconed_code",
-	"column_name_10": "BEACONC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "beaconed",
-	"column_name_10": "BEACONED",
-	"data_type": "text"
-}, {
-	"column_name": "beacon_type_code",
-	"column_name_10": "BEACONTYPC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "blg_unit_type_abbreviation",
-	"column_name_10": "BLGUNTTPAB",
-	"data_type": "text"
-}, {
-	"column_name": "blg_unit_type",
-	"column_name_10": "BLGUNTTYP",
-	"data_type": "text"
-}, {
-	"column_name": "border_class",
-	"column_name_10": "BORDER_CLS",
-	"data_type": "text"
-}, {
-	"column_name": "building_use_code",
-	"column_name_10": "BUILDUSEC",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "building_use",
-	"column_name_10": "BUILD_USE",
-	"data_type": "text"
-}, {
-	"column_name": "bouyed",
-	"column_name_10": "BUOYED",
-	"data_type": "text"
-}, {
-	"column_name": "buoyed_code",
-	"column_name_10": "BUOYEDC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "child_exists",
-	"column_name_10": "CHILDEXIST",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "class_code",
-	"column_name_10": "CLASS_CODE",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "code",
-	"column_name_10": "CODE",
-	"data_type": "text"
-}, {
-	"column_name": "code2482",
-	"column_name_10": "CODE2482",
-	"data_type": "real"
-}, {
-	"column_name": "column_name_10",
-	"column_name_10": "COLNAME10",
-	"data_type": "text"
-}, {
-	"column_name": "column_name",
-	"column_name_10": "COLUMNNM",
-	"data_type": "text"
-}, {
-	"column_name": "construction",
-	"column_name_10": "CONST",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "construction_type_code",
-	"column_name_10": "CONSTNTYPC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "construction_type",
-	"column_name_10": "CONST_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "create_date_pfi",
-	"column_name_10": "CRDATE_PFI",
-	"data_type": "date"
-}, {
-	"column_name": "create_date_ufi",
-	"column_name_10": "CRDATE_UFI",
-	"data_type": "date"
-}, {
-	"column_name": "crown_status_code",
-	"column_name_10": "CROWNSTATC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "crown_status",
-	"column_name_10": "CROWN_STAT",
-	"data_type": "text"
-}, {
-	"column_name": "create_date",
-	"column_name_10": "CR_DATE",
-	"data_type": "date"
-}, {
-	"column_name": "centroid_pfi",
-	"column_name_10": "C_PFI",
-	"data_type": "bigint"
-}, {
-	"column_name": "data_sour_code",
-	"column_name_10": "DATASRCC",
-	"data_type": "text"
-}, {
-	"column_name": "delwp_region",
-	"column_name_10": "DELWP_REG",
-	"data_type": "text"
-}, {
-	"column_name": "delwp_region_code",
-	"column_name_10": "DELWP_REGC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "depi_region_code",
-	"column_name_10": "DEPIREGCD",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "description",
-	"column_name_10": "DESC",
-	"data_type": "text"
-}, {
-	"column_name": "desc_type_code",
-	"column_name_10": "DESCTYPEC",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "description_type",
-	"column_name_10": "DESC_TYPE",
-	"data_type": "character varying(5)"
-}, {
-	"column_name": "direction",
-	"column_name_10": "DIRECTION",
-	"data_type": "text"
-}, {
-	"column_name": "direction_code",
-	"column_name_10": "DIR_CODE",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "distance_related_flag_code",
-	"column_name_10": "DISTRELFLC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "district_code",
-	"column_name_10": "DISTRICTC",
-	"data_type": "integer"
-}, {
-	"column_name": "distance_related_flag",
-	"column_name_10": "DIST_FLAG",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "district_label",
-	"column_name_10": "DIST_LABEL",
-	"data_type": "text"
-}, {
-	"column_name": "div_rd_code",
-	"column_name_10": "DIVRDCODE",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "div_rd",
-	"column_name_10": "DIV_RD",
-	"data_type": "text"
-}, {
-	"column_name": "doi_lga",
-	"column_name_10": "DOI_LGA",
-	"data_type": "text"
-}, {
-	"column_name": "dse_region_code",
-	"column_name_10": "DSEREGIONC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "dse_region",
-	"column_name_10": "DSE_REGION",
-	"data_type": "text"
-}, {
-	"column_name": "dual_status",
-	"column_name_10": "DUALSTAT",
-	"data_type": "text"
-}, {
-	"column_name": "dual_status_code",
-	"column_name_10": "DUALSTATC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "effective_from",
-	"column_name_10": "EFFEC_FROM",
-	"data_type": "date"
-}, {
-	"column_name": "effective_to",
-	"column_name_10": "EFFEC_TO",
-	"data_type": "date"
-}, {
-	"column_name": "elev_accuracy",
-	"column_name_10": "ELEVACC",
-	"data_type": "numeric"
-}, {
-	"column_name": "embankment_function",
-	"column_name_10": "EMBANK_FC",
-	"data_type": "text"
-}, {
-	"column_name": "ezi_road_name_label",
-	"column_name_10": "EZIRDNMLBL",
-	"data_type": "text"
-}, {
-	"column_name": "ezi_road_name",
-	"column_name_10": "EZI_RDNAME",
-	"data_type": "text"
-}, {
-	"column_name": "fcellname",
-	"column_name_10": "FCELLNAME",
-	"data_type": "character varying(6)"
-}, {
-	"column_name": "fcolor",
-	"column_name_10": "FCOLOR",
-	"data_type": "bigint"
-}, {
-	"column_name": "feature_present",
-	"column_name_10": "FEATPRES",
-	"data_type": "text"
-}, {
-	"column_name": "feature_present_code",
-	"column_name_10": "FEATPRESC",
-	"data_type": "text"
-}, {
-	"column_name": "feat_reli_date",
-	"column_name_10": "FEATRELDT",
-	"data_type": "date"
-}, {
-	"column_name": "feature_status",
-	"column_name_10": "FEATSTATUS",
-	"data_type": "text"
-}, {
-	"column_name": "feature_subtype",
-	"column_name_10": "FEATSUBTYP",
-	"data_type": "text"
-}, {
-	"column_name": "feature",
-	"column_name_10": "FEATURE",
-	"data_type": "text"
-}, {
-	"column_name": "feature_code",
-	"column_name_10": "FEATUREC",
-	"data_type": "character varying(4)"
-}, {
-	"column_name": "feature_reliability",
-	"column_name_10": "FEAT_REL",
-	"data_type": "text"
-}, {
-	"column_name": "feature_reliability_code",
-	"column_name_10": "FEAT_REL_C",
-	"data_type": "character varying(5)"
-}, {
-	"column_name": "ferry_type_code",
-	"column_name_10": "FERRYTYPEC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "ferry_type",
-	"column_name_10": "FERRY_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "ffont",
-	"column_name_10": "FFONT",
-	"data_type": "real"
-}, {
-	"column_name": "fheight",
-	"column_name_10": "FHEIGHT",
-	"data_type": "real"
-}, {
-	"column_name": "fjustification",
-	"column_name_10": "FJUSTIFCN",
-	"data_type": "text"
-}, {
-	"column_name": "flevel",
-	"column_name_10": "FLEVEL",
-	"data_type": "int"
-}, {
-	"column_name": "add_floor_type",
-	"column_name_10": "FLOOR_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "floor_type_abbreviation",
-	"column_name_10": "FLTYPEABB",
-	"data_type": "text"
-}, {
-	"column_name": "fname",
-	"column_name_10": "FNAME",
-	"data_type": "text"
-}, {
-	"column_name": "footprint_type_code",
-	"column_name_10": "FOOTPRTYC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "footprint_type",
-	"column_name_10": "FOOT_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "feature_quality_id",
-	"column_name_10": "FQID",
-	"data_type": "text"
-}, {
-	"column_name": "from_precision",
-	"column_name_10": "FROM_PRECN",
-	"data_type": "double precision"
-}, {
-	"column_name": "from_survey_x",
-	"column_name_10": "FROM_SURVX",
-	"data_type": "double precision"
-}, {
-	"column_name": "from_survey_y",
-	"column_name_10": "FROM_SURVY",
-	"data_type": "double precision"
-}, {
-	"column_name": "feature_style",
-	"column_name_10": "FSTYLE",
-	"data_type": "bigint"
-}, {
-	"column_name": "fsymbol",
-	"column_name_10": "FSYMBOL",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "feature_type",
-	"column_name_10": "FTYPE",
-	"data_type": "text"
-}, {
-	"column_name": "feature_type_code",
-	"column_name_10": "FTYPE_CODE",
-	"data_type": "text"
-}, {
-	"column_name": "function_code",
-	"column_name_10": "FUNCTIONC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "further_description",
-	"column_name_10": "FUR_DESC",
-	"data_type": "text"
-}, {
-	"column_name": "fweight",
-	"column_name_10": "FWEIGHT",
-	"data_type": "bigint"
-}, {
-	"column_name": "fwidth",
-	"column_name_10": "FWIDTH",
-	"data_type": "real"
-}, {
-	"column_name": "gazetted_locality_name",
-	"column_name_10": "GAZLOC",
-	"data_type": "text"
-}, {
-	"column_name": "gazettal_registration",
-	"column_name_10": "GAZREGN",
-	"data_type": "text"
-}, {
-	"column_name": "gazetted_lga_name",
-	"column_name_10": "GAZ_LGA",
-	"data_type": "text"
-}, {
-	"column_name": "geocode_feature",
-	"column_name_10": "GCODEFEAT",
-	"data_type": "text"
-}, {
-	"column_name": "geocode_feature_code",
-	"column_name_10": "GCODEFEATC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "add_geocode_feature",
-	"column_name_10": "GCODE_FT",
-	"data_type": "text"
-}, {
-	"column_name": "gda94_lat",
-	"column_name_10": "GDA94_LAT",
-	"data_type": "real"
-}, {
-	"column_name": "gda94_long",
-	"column_name_10": "GDA94_LONG",
-	"data_type": "real"
-}, {
-	"column_name": "gnr_approved",
-	"column_name_10": "GNR_APPROV",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "graphic_type_code",
-	"column_name_10": "GRAPHTYPEC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "graph_type",
-	"column_name_10": "GRAPH_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "ground_relationship_code",
-	"column_name_10": "GRNDRELC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "ground_relationship",
-	"column_name_10": "GRND_REL",
-	"data_type": "character varying(5)"
-}, {
-	"column_name": "hierarchy",
-	"column_name_10": "HIERARCHY",
-	"data_type": "int"
-}, {
-	"column_name": "hierarchy",
-	"column_name_10": "HIERARCHY",
-	"table_names": ["hy_hierarchy"],
-	"data_type": "character varying(6)"
-}, {
-	"column_name": "hierarchy_code",
-	"column_name_10": "HIERARCHYC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "hierarchy_fname",
-	"column_name_10": "HIERCHY_NM",
-	"data_type": "text"
-}, {
-	"column_name": "hierarchy_fullname",
-	"column_name_10": "HIER_FNAME",
-	"data_type": "text"
-}, {
-	"column_name": "hierarchy_name",
-	"column_name_10": "HIER_NAME",
-	"data_type": "text"
-}, {
-	"column_name": "hsa_flag_code",
-	"column_name_10": "HSAFLAGCD",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "hsa_flag",
-	"column_name_10": "HSA_FLAG",
-	"data_type": "text"
-}, {
-	"column_name": "height_limit",
-	"column_name_10": "HT_LIMIT",
-	"data_type": "double precision"
-}, {
-	"column_name": "intersection",
-	"column_name_10": "INTERSECTN",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "intersection_code",
-	"column_name_10": "INTRSECNCD",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "is_deprecated",
-	"column_name_10": "ISDEPREC",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "is_primary_code",
-	"column_name_10": "ISPRIMARYC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "add_is_primary",
-	"column_name_10": "IS_PRIMARY",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "justification",
-	"column_name_10": "JUSTIFCN",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "layer_gtype",
-	"column_name_10": "LAYERGTYPE",
-	"data_type": "text"
-}, {
-	"column_name": "left_locality",
-	"column_name_10": "LEFT_LOC",
-	"data_type": "text"
-}, {
-	"column_name": "lga",
-	"column_name_10": "LGA",
-	"data_type": "text"
-}, {
-	"column_name": "lga_class_code",
-	"column_name_10": "LGACLASSC",
-	"data_type": "text"
-}, {
-	"column_name": "lga_class",
-	"column_name_10": "LGA_CLASS",
-	"data_type": "text"
-}, {
-	"column_name": "lga_code",
-	"column_name_10": "LGA_CODE",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "lighted",
-	"column_name_10": "LIGHTED",
-	"data_type": "text"
-}, {
-	"column_name": "lighted_code",
-	"column_name_10": "LIGHTEDC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "locality",
-	"column_name_10": "LOCALITY",
-	"data_type": "text"
-}, {
-	"column_name": "locality_unique",
-	"column_name_10": "LOCUNIQUE",
-	"data_type": "text"
-}, {
-	"column_name": "location_descriptor",
-	"column_name_10": "LOC_DESC",
-	"data_type": "text"
-}, {
-	"column_name": "locality_road_id",
-	"column_name_10": "LOC_RD_ID",
-	"data_type": "bigint"
-}, {
-	"column_name": "long_name",
-	"column_name_10": "LONGNAME",
-	"data_type": "text"
-}, {
-	"column_name": "maintainer_table_name",
-	"column_name_10": "MAINTTABLE",
-	"data_type": "text"
-}, {
-	"column_name": "match_progress",
-	"column_name_10": "MATCH_PROG",
-	"data_type": "text"
-}, {
-	"column_name": "material_contained_code",
-	"column_name_10": "MATCONTC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "material_conveyed",
-	"column_name_10": "MATCONVEY",
-	"data_type": "character varying(6)"
-}, {
-	"column_name": "material_conveyed_code",
-	"column_name_10": "MATCONVEYC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "material_contained",
-	"column_name_10": "MAT_CONT",
-	"data_type": "text"
-}, {
-	"column_name": "materials_conveyed",
-	"column_name_10": "MAT_CONVEY",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "maximum_scale",
-	"column_name_10": "MAX_SCALE",
-	"data_type": "bigint"
-}, {
-	"column_name": "measuring_equipment",
-	"column_name_10": "MEAS_EQUIP",
-	"data_type": "text"
-}, {
-	"column_name": "method",
-	"column_name_10": "METHOD",
-	"data_type": "text"
-}, {
-	"column_name": "mfb_district",
-	"column_name_10": "MFB_DIST",
-	"data_type": "text"
-}, {
-	"column_name": "mga_east",
-	"column_name_10": "MGA_EAST",
-	"data_type": "real"
-}, {
-	"column_name": "mga_north",
-	"column_name_10": "MGA_NORTH",
-	"data_type": "real"
-}, {
-	"column_name": "mine_structure",
-	"column_name_10": "MINESTR",
-	"data_type": "text"
-}, {
-	"column_name": "mine_structure_code",
-	"column_name_10": "MINESTRC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "minimum_scale",
-	"column_name_10": "MIN_SCALE",
-	"data_type": "bigint"
-}, {
-	"column_name": "mod2482",
-	"column_name_10": "MOD2482",
-	"data_type": "real"
-}, {
-	"column_name": "multi_assessment_code",
-	"column_name_10": "MULTIASSC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "multi_assessment",
-	"column_name_10": "MULTI_ASS",
-	"data_type": "text"
-}, {
-	"column_name": "name",
-	"column_name_10": "NAME",
-	"data_type": "text"
-}, {
-	"column_name": "name_status",
-	"column_name_10": "NAMESTAT",
-	"data_type": "text"
-}, {
-	"column_name": "name_status_code",
-	"column_name_10": "NAMESTATC",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "named_feature_id",
-	"column_name_10": "NFEAT_ID",
-	"data_type": "integer"
-}, {
-	"column_name": "number_reliability",
-	"column_name_10": "NUM_RELIAB",
-	"data_type": "text"
-}, {
-	"column_name": "nonunique_locality",
-	"column_name_10": "NUNIQ_LOC",
-	"data_type": "text"
-}, {
-	"column_name": "obligation",
-	"column_name_10": "OBLIGATION",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "official_name",
-	"column_name_10": "OFFICIALNM",
-	"data_type": "text"
-}, {
-	"column_name": "organisation",
-	"column_name_10": "ORG",
-	"data_type": "text"
-}, {
-	"column_name": "organisation_code",
-	"column_name_10": "ORG_C",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "origin",
-	"column_name_10": "ORIGIN",
-	"data_type": "text"
-}, {
-	"column_name": "origin_code",
-	"column_name_10": "ORIGINC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "outside_property_code",
-	"column_name_10": "OUTPROPC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "outside_property",
-	"column_name_10": "OUT_PROP",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "page_size",
-	"column_name_10": "PAGE_SIZE",
-	"data_type": "text"
-}, {
-	"column_name": "parent_feature_id",
-	"column_name_10": "PARENTFTID",
-	"data_type": "bigint"
-}, {
-	"column_name": "parent_name",
-	"column_name_10": "PARENTNAME",
-	"data_type": "text"
-}, {
-	"column_name": "parish_name",
-	"column_name_10": "PARISH",
-	"data_type": "text"
-}, {
-	"column_name": "parish_code",
-	"column_name_10": "PARISHC",
-	"data_type": "character varying(4)"
-}, {
-	"column_name": "park_function_code",
-	"column_name_10": "PARKFNC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "park_function",
-	"column_name_10": "PARK_FC",
-	"data_type": "text"
-}, {
-	"column_name": "parent_method",
-	"column_name_10": "PARMETH",
-	"data_type": "character varying(8)"
-}, {
-	"column_name": "parent_method_desc",
-	"column_name_10": "PARMETHDSC",
-	"data_type": "text"
-}, {
-	"column_name": "part",
-	"column_name_10": "PART",
-	"data_type": "character varying(6)"
-}, {
-	"column_name": "parish_town",
-	"column_name_10": "PARTOWN",
-	"data_type": "text"
-}, {
-	"column_name": "parish_town_code",
-	"column_name_10": "PARTOWNC",
-	"data_type": "character varying(5)"
-}, {
-	"column_name": "parish_town_display",
-	"column_name_10": "PARTOWNDPY",
-	"data_type": "text"
-}, {
-	"column_name": "parish_town_id",
-	"column_name_10": "PARTOWNID",
-	"data_type": "bigint"
-}, {
-	"column_name": "part_code",
-	"column_name_10": "PART_CODE",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "pfi",
-	"column_name_10": "PFI",
-	"data_type": "bigint",
-	"primary_key_priority": 2
-}, {
-	"column_name": "pfi_created",
-	"column_name_10": "PFI_CR",
-	"data_type": "date"
-}, {
-	"column_name": "physical_condition_code",
-	"column_name_10": "PHYSCONDC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "physical_condition",
-	"column_name_10": "PHYS_COND",
-	"data_type": "text"
-}, {
-	"column_name": "pipeline_function_code",
-	"column_name_10": "PIPELNFNC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "pipeline_function",
-	"column_name_10": "PIPE_FN",
-	"data_type": "text"
-}, {
-	"column_name": "place_name_label",
-	"column_name_10": "PLACELABEL",
-	"data_type": "text"
-}, {
-	"column_name": "plan_accuracy",
-	"column_name_10": "PLANACC",
-	"data_type": "numeric"
-}, {
-	"column_name": "planning_scheme",
-	"column_name_10": "PLANSCHM",
-	"data_type": "text"
-}, {
-	"column_name": "planning_scheme_code",
-	"column_name_10": "PLANSCHMC",
-	"data_type": "text"
-}, {
-	"column_name": "plantation_type_code",
-	"column_name_10": "PLANTNTYCD",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "plan_number",
-	"column_name_10": "PLAN_NO",
-	"data_type": "text"
-}, {
-	"column_name": "plan_number_id",
-	"column_name_10": "PLAN_NUMID",
-	"data_type": "integer"
-}, {
-	"column_name": "plan_type",
-	"column_name_10": "PLAN_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "platform_type_code",
-	"column_name_10": "PLATFMTYC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "platform_type",
-	"column_name_10": "PLAT_TYPE",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "plan_integer_min",
-	"column_name_10": "PLININTMIN",
-	"data_type": "bigint"
-}, {
-	"column_name": "plan_integer_current_max",
-	"column_name_10": "PLNINTCRMX",
-	"data_type": "bigint"
-}, {
-	"column_name": "plan_integer_max",
-	"column_name_10": "PLNINTMXX",
-	"data_type": "bigint"
-}, {
-	"column_name": "plantation_type",
-	"column_name_10": "PLNTN_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "plan_type_prefix",
-	"column_name_10": "PLNTYPEPR",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "plan_type_status",
-	"column_name_10": "PLNTYPEST",
-	"data_type": "text"
-}, {
-	"column_name": "point",
-	"column_name_10": "POINT",
-	"data_type": "int"
-}, {
-	"column_name": "property_status",
-	"column_name_10": "PROPSTATUS",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "property_pfi",
-	"column_name_10": "PR_PFI",
-	"data_type": "bigint"
-}, {
-	"column_name": "property_type",
-	"column_name_10": "PR_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "property_type_code",
-	"column_name_10": "PR_TYPEC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "public_land_group",
-	"column_name_10": "PUBLANDGRP",
-	"data_type": "text"
-}, {
-	"column_name": "rail_gauge_code",
-	"column_name_10": "RAILGAUGEC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "rail_gauge",
-	"column_name_10": "RAIL_GAUGE",
-	"data_type": "text"
-}, {
-	"column_name": "road_class_code",
-	"column_name_10": "RDCLASSC",
-	"data_type": "integer"
-}, {
-	"column_name": "road_relationship",
-	"column_name_10": "RDREL",
-	"data_type": "text"
-}, {
-	"column_name": "road_relationship_code",
-	"column_name_10": "RDRELC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "road_restriction",
-	"column_name_10": "RDREST",
-	"data_type": "text"
-}, {
-	"column_name": "road_restriction_code",
-	"column_name_10": "RDRESTC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "road_seal_code",
-	"column_name_10": "RDSEALC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "road_type_abbreviation",
-	"column_name_10": "RDTYPEABB",
-	"data_type": "text"
-}, {
-	"column_name": "road_name_1",
-	"column_name_10": "RD_NAME1",
-	"data_type": "text"
-}, {
-	"column_name": "road_name_2",
-	"column_name_10": "RD_NAME2",
-	"data_type": "text"
-}, {
-	"column_name": "road_name_3",
-	"column_name_10": "RD_NAME3",
-	"data_type": "text"
-}, {
-	"column_name": "road_name_4",
-	"column_name_10": "RD_NAME4",
-	"data_type": "text"
-}, {
-	"column_name": "road_name_5",
-	"column_name_10": "RD_NAME5",
-	"data_type": "text"
-}, {
-	"column_name": "road_name_6",
-	"column_name_10": "RD_NAME6",
-	"data_type": "text"
-}, {
-	"column_name": "road_name_7",
-	"column_name_10": "RD_NAME7",
-	"data_type": "text"
-}, {
-	"column_name": "road_suffix",
-	"column_name_10": "RD_SUF",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "road_suffix_1",
-	"column_name_10": "RD_SUF1",
-	"data_type": "text"
-}, {
-	"column_name": "road_suffix_2",
-	"column_name_10": "RD_SUF2",
-	"data_type": "text"
-}, {
-	"column_name": "road_suffix_3",
-	"column_name_10": "RD_SUF3",
-	"data_type": "text"
-}, {
-	"column_name": "road_suffix_4",
-	"column_name_10": "RD_SUF4",
-	"data_type": "text"
-}, {
-	"column_name": "road_suffix_5",
-	"column_name_10": "RD_SUF5",
-	"data_type": "text"
-}, {
-	"column_name": "road_suffix_6",
-	"column_name_10": "RD_SUF6",
-	"data_type": "text"
-}, {
-	"column_name": "road_suffix_7",
-	"column_name_10": "RD_SUF7",
-	"data_type": "text"
-}, {
-	"column_name": "road_type_1",
-	"column_name_10": "RD_TYPE1",
-	"data_type": "text"
-}, {
-	"column_name": "road_type_2",
-	"column_name_10": "RD_TYPE2",
-	"data_type": "text"
-}, {
-	"column_name": "road_type_3",
-	"column_name_10": "RD_TYPE3",
-	"data_type": "text"
-}, {
-	"column_name": "road_type_4",
-	"column_name_10": "RD_TYPE4",
-	"data_type": "text"
-}, {
-	"column_name": "road_type_5",
-	"column_name_10": "RD_TYPE5",
-	"data_type": "text"
-}, {
-	"column_name": "road_type_6",
-	"column_name_10": "RD_TYPE6",
-	"data_type": "text"
-}, {
-	"column_name": "road_type_7",
-	"column_name_10": "RD_TYPE7",
-	"data_type": "text"
-}, {
-	"column_name": "reef_type_code",
-	"column_name_10": "REEFTYPEC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "reef_type",
-	"column_name_10": "REEF_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "reftab_code_column_name",
-	"column_name_10": "REFCCNAME",
-	"data_type": "text"
-}, {
-	"column_name": "reftab_decode_column_name",
-	"column_name_10": "REFDCCNAME",
-	"data_type": "text"
-}, {
-	"column_name": "reftab_owner_name",
-	"column_name_10": "REFOWNNAME",
-	"data_type": "text"
-}, {
-	"column_name": "reftab_table_name",
-	"column_name_10": "REFTABNAME",
-	"data_type": "text"
-}, {
-	"column_name": "reftab_id",
-	"column_name_10": "REFTAB_ID",
-	"data_type": "int"
-}, {
-	"column_name": "registration_date",
-	"column_name_10": "REG_DATE",
-	"data_type": "date"
-}, {
-	"column_name": "region_label",
-	"column_name_10": "REG_LABEL",
-	"data_type": "text"
-}, {
-	"column_name": "related_feature_ufi",
-	"column_name_10": "RELF_UFI",
-	"data_type": "bigint"
-}, {
-	"column_name": "responsible_business",
-	"column_name_10": "RESPBUS",
-	"data_type": "text"
-}, {
-	"column_name": "responsible_business_code",
-	"column_name_10": "RESPBUSC",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "restrictions",
-	"column_name_10": "RESTRICTN",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "right_locality",
-	"column_name_10": "RIGHT_LOC",
-	"data_type": "text"
-}, {
-	"column_name": "road_class",
-	"column_name_10": "ROAD_CLASS",
-	"data_type": "text"
-}, {
-	"column_name": "road_seal",
-	"column_name_10": "ROAD_SEAL",
-	"data_type": "text"
-}, {
-	"column_name": "road_type",
-	"column_name_10": "ROAD_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "reftab_relationship_id",
-	"column_name_10": "RT_RELN_ID",
-	"data_type": "bigint",
-	"primary_key_priority": 3
-}, {
-	"column_name": "runway_number",
-	"column_name_10": "RUNWAY_NO",
-	"data_type": "integer"
-}, {
-	"column_name": "scale",
-	"column_name_10": "SCALE",
-	"data_type": "text"
-}, {
-	"column_name": "scale_use",
-	"column_name_10": "SCALE_USE",
-	"data_type": "character varying(6)"
-}, {
-	"column_name": "scale_use_code",
-	"column_name_10": "SCALE_USEC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "scheme_code",
-	"column_name_10": "SCHMCODE",
-	"data_type": "text"
-}, {
-	"column_name": "scheme_type",
-	"column_name_10": "SCHMTYPE",
-	"data_type": "character varying(6)"
-}, {
-	"column_name": "sdrn_qinfo",
-	"column_name_10": "SDRN_QINFO",
-	"data_type": "text"
-}, {
-	"column_name": "shoreline_datum",
-	"column_name_10": "SHORLNDAT",
-	"data_type": "text"
-}, {
-	"column_name": "shoreline_datum_code",
-	"column_name_10": "SHORLNDATC",
-	"data_type": "text"
-}, {
-	"column_name": "sort_order",
-	"column_name_10": "SORT_ORDER",
-	"data_type": "int"
-}, {
-	"column_name": "source",
-	"column_name_10": "SOURCE",
-	"data_type": "text"
-}, {
-	"column_name": "spi",
-	"column_name_10": "SPI",
-	"data_type": "text"
-}, {
-	"column_name": "spi_code",
-	"column_name_10": "SPI_CODE",
-	"data_type": "int"
-}, {
-	"column_name": "sports_type_code",
-	"column_name_10": "SPORTSTYC",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "sports_type",
-	"column_name_10": "SPORT_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "source_code",
-	"column_name_10": "SRC_CODE",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "source_type",
-	"column_name_10": "SRC_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "source_type_code",
-	"column_name_10": "SRC_TYPE_C",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "source_verified",
-	"column_name_10": "SRC_VERIF",
-	"data_type": "date"
-}, {
-	"column_name": "standard",
-	"column_name_10": "STANDARD",
-	"data_type": "text"
-}, {
-	"column_name": "state",
-	"column_name_10": "STATE",
-	"data_type": "text"
-}, {
-	"column_name": "state_code",
-	"column_name_10": "STATE_CODE",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "status",
-	"column_name_10": "STATUS",
-	"data_type": "text"
-}, {
-	"column_name": "status_code",
-	"column_name_10": "STAT_CODE",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "structure_name",
-	"column_name_10": "STRUCTNAME",
-	"data_type": "text"
-}, {
-	"column_name": "structure_type",
-	"column_name_10": "STRUC_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "structure_type_code",
-	"column_name_10": "STR_TYPEC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "subdivision",
-	"column_name_10": "SUBDIV",
-	"data_type": "text"
-}, {
-	"column_name": "substance_extracted_code",
-	"column_name_10": "SUBSEXTRC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "substance_extracted",
-	"column_name_10": "SUBST_EXT",
-	"data_type": "character varying(5)"
-}, {
-	"column_name": "supply_version",
-	"column_name_10": "SUPPLYVSN",
-	"data_type": "integer"
-}, {
-	"column_name": "surface_relationship_code",
-	"column_name_10": "SURFRELC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "surface_relationship",
-	"column_name_10": "SURF_REL",
-	"data_type": "text"
-}, {
-	"column_name": "surface_type",
-	"column_name_10": "SURF_TYPE",
-	"data_type": "character varying(5)"
-}, {
-	"column_name": "surface_type_code",
-	"column_name_10": "SURF_TYPEC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "table_column_id",
-	"column_name_10": "TABCOLID",
-	"data_type": "bigint"
-}, {
-	"column_name": "table_owner",
-	"column_name_10": "TABLEOWNER",
-	"data_type": "text"
-}, {
-	"column_name": "table_name",
-	"column_name_10": "TABLE_NAME",
-	"data_type": "text"
-}, {
-	"column_name": "tenure_type",
-	"column_name_10": "TENTYPE",
-	"data_type": "text"
-}, {
-	"column_name": "tenure_type_code",
-	"column_name_10": "TENTYPEC",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "tenure",
-	"column_name_10": "TENURE",
-	"data_type": "text"
-}, {
-	"column_name": "tenure_code",
-	"column_name_10": "TENUREC",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "title",
-	"column_name_10": "TITLE",
-	"data_type": "text"
-}, {
-	"column_name": "tourist_type_code",
-	"column_name_10": "TOURTYPECD",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "tourist_type",
-	"column_name_10": "TOUR_TYPE",
-	"data_type": "character varying(3)"
-}, {
-	"column_name": "township_name",
-	"column_name_10": "TOWNSHIP",
-	"data_type": "text"
-}, {
-	"column_name": "township_code",
-	"column_name_10": "TOWNSHIPC",
-	"data_type": "character varying(5)"
-}, {
-	"column_name": "to_precision",
-	"column_name_10": "TO_PRECN",
-	"data_type": "double precision"
-}, {
-	"column_name": "to_survey_x",
-	"column_name_10": "TO_SURVX",
-	"data_type": "double precision"
-}, {
-	"column_name": "to_survey_y",
-	"column_name_10": "TO_SURVY",
-	"data_type": "double precision"
-}, {
-	"column_name": "tracks_number_of",
-	"column_name_10": "TRACKS_NO",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "transferrable",
-	"column_name_10": "TRANSFER",
-	"data_type": "text"
-}, {
-	"column_name": "transferrable_code",
-	"column_name_10": "TRANSFERC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "tree_density",
-	"column_name_10": "TREE_DEN",
-	"data_type": "text"
-}, {
-	"column_name": "tree_density_code",
-	"column_name_10": "TREE_DEN_C",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "text_height",
-	"column_name_10": "TXT_HT",
-	"data_type": "double precision"
-}, {
-	"column_name": "type_type_code",
-	"column_name_10": "TYPETYPEC",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "uc_cent_uc_type",
-	"column_name_10": "UC_TYPE",
-	"data_type": "text"
-}, {
-	"column_name": "uc_type_code",
-	"column_name_10": "UC_TYPEC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "ufi",
-	"column_name_10": "UFI",
-	"data_type": "bigint",
-	"primary_key_priority": 1
-}, {
-	"column_name": "create_date_ufi",
-	"column_name_10": "UFI_CR",
-	"data_type": "date"
-}, {
-	"column_name": "unique_locality",
-	"column_name_10": "UNIQ_LOC",
-	"data_type": "text"
-}, {
-	"column_name": "usage",
-	"column_name_10": "USAGE",
-	"data_type": "text"
-}, {
-	"column_name": "usage_code",
-	"column_name_10": "USAGE_CODE",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "utility_function_code",
-	"column_name_10": "UTILFNC",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "utility_function",
-	"column_name_10": "UTIL_FN",
-	"data_type": "text"
-}, {
-	"column_name": "vicgrid66_east",
-	"column_name_10": "VG66_E",
-	"data_type": "numeric"
-}, {
-	"column_name": "vicgrid66_north",
-	"column_name_10": "VG66_N",
-	"data_type": "numeric"
-}, {
-	"column_name": "vicgrid94_east",
-	"column_name_10": "VG94_E",
-	"data_type": "numeric"
-}, {
-	"column_name": "vicgrid94_north",
-	"column_name_10": "VG94_N",
-	"data_type": "numeric"
-}, {
-	"column_name": "vicgov_region",
-	"column_name_10": "VGREG",
-	"data_type": "text"
-}, {
-	"column_name": "vicgov_region_code",
-	"column_name_10": "VGREGC",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "vicgov_region_sname",
-	"column_name_10": "VGREGSNM",
-	"data_type": "text"
-}, {
-	"column_name": "vicnames_id",
-	"column_name_10": "VICNAMESID",
-	"data_type": "bigint"
-}, {
-	"column_name": "vicnames_status",
-	"column_name_10": "VICNAMESST",
-	"data_type": "text"
-}, {
-	"column_name": "vicnames_status_code",
-	"column_name_10": "VICNMSTATC",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "vmadd_pfi_link",
-	"column_name_10": "VMADDPFILK",
-	"data_type": "text"
-}, {
-	"column_name": "vicmap_feature_subtype",
-	"column_name_10": "VMFTSUBTYP",
-	"data_type": "text"
-}, {
-	"column_name": "vicnames_feature_code",
-	"column_name_10": "VNFTCODE",
-	"data_type": "text"
-}, {
-	"column_name": "waterbody_state_code",
-	"column_name_10": "WATBDYSTC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "water_use_function_code",
-	"column_name_10": "WATUSEFNC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "waterbody_state",
-	"column_name_10": "WTR_BDY_ST",
-	"data_type": "text"
-}, {
-	"column_name": "water_use_function",
-	"column_name_10": "WTR_USE_FN",
-	"data_type": "text"
-}, {
-	"column_name": "z_level_code",
-	"column_name_10": "ZLEVELC",
-	"data_type": "character varying(2)"
-}, {
-	"column_name": "zone_status",
-	"column_name_10": "ZNSTAT",
-	"data_type": "text"
-}, {
-	"column_name": "zone_status_code",
-	"column_name_10": "ZNSTATC",
-	"data_type": "character varying(1)"
-}, {
-	"column_name": "zone",
-	"column_name_10": "ZONE",
-	"data_type": "int"
-}, {
-	"column_name": "z_level",
-	"column_name_10": "Z_LEVEL",
-	"data_type": "text"
-}]
+[  
+   {  
+      "column_name":"access_type_code",
+      "column_name_10":"ACCESSTYCD",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"access_type",
+      "column_name_10":"ACCESSTYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"accessory_lot",
+      "column_name_10":"ACCSS_LOT",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"act",
+      "column_name_10":"ACT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"address_point",
+      "column_name_10":"ADDRESS_PT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"address_class",
+      "column_name_10":"ADD_CLASS",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"address_class_code",
+      "column_name_10":"ADD_CLASSC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"agd66_lat",
+      "column_name_10":"AGD66_LAT",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"agd66_long",
+      "column_name_10":"AGD66_LONG",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"alternate_locality",
+      "column_name_10":"ALTLOC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"alternate_locality_id",
+      "column_name_10":"ALTLOCID",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"amg_east",
+      "column_name_10":"AMG_EAST",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"amg_north",
+      "column_name_10":"AMG_NORTH",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"annotation_text",
+      "column_name_10":"ANNO_TXT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"app_multi_lot_footprint",
+      "column_name_10":"APMLFOOTPT",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"app_plan_description",
+      "column_name_10":"APPLANDESC",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"attr_reli_date",
+      "column_name_10":"ATTRELDT",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"auth_org_code",
+      "column_name_10":"AUTHORGC",
+      "data_type":"character varying(4)"
+   },
+   {  
+      "column_name":"auth_org_id",
+      "column_name_10":"AUTHORGID",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"auth_org_longname",
+      "column_name_10":"AUTHORGNAM",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"auth_org_verified",
+      "column_name_10":"AUTHORGVER",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"auth_org",
+      "column_name_10":"AUTH_ORG",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"beacon_present",
+      "column_name_10":"BEACN_PRES",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"beacon_type",
+      "column_name_10":"BEACN_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"beaconed_code",
+      "column_name_10":"BEACONC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"beaconed",
+      "column_name_10":"BEACONED",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"beacon_type_code",
+      "column_name_10":"BEACONTYPC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"blg_unit_type_abbreviation",
+      "column_name_10":"BLGUNTTPAB",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"blg_unit_type",
+      "column_name_10":"BLGUNTTYP",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"border_class",
+      "column_name_10":"BORDER_CLS",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"building_use_code",
+      "column_name_10":"BUILDUSEC",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"building_use",
+      "column_name_10":"BUILD_USE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"bouyed",
+      "column_name_10":"BUOYED",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"buoyed_code",
+      "column_name_10":"BUOYEDC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"cfa_district",
+      "column_name_10":"CFA_DIST",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"cfa_region",
+      "column_name_10":"CFA_REGION",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"child_exists",
+      "column_name_10":"CHILDEXIST",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"class_code",
+      "column_name_10":"CLASS_CODE",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"code",
+      "column_name_10":"CODE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"code2482",
+      "column_name_10":"CODE2482",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"column_name_10",
+      "column_name_10":"COLNAME10",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"column_name",
+      "column_name_10":"COLUMNNM",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"construction",
+      "column_name_10":"CONST",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"construction_type_code",
+      "column_name_10":"CONSTNTYPC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"construction_type",
+      "column_name_10":"CONST_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"create_date",
+      "column_name_10":"CREATEDATE",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"create_date_pfi",
+      "column_name_10":"CRDATE_PFI",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"create_date_ufi",
+      "column_name_10":"CRDATE_UFI",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"crown_status_code",
+      "column_name_10":"CROWNSTATC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"crown_status",
+      "column_name_10":"CROWN_STAT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"create_date",
+      "column_name_10":"CR_DATE",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"centroid_pfi",
+      "column_name_10":"C_PFI",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"currency",
+      "column_name_10":"CURRENCY",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"data_sour_code",
+      "column_name_10":"DATASRCC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"delwp_region",
+      "column_name_10":"DELWP_REG",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"delwp_region_code",
+      "column_name_10":"DELWP_REGC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"depi_region_code",
+      "column_name_10":"DEPIREGCD",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"description",
+      "column_name_10":"DESC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"desc_type_code",
+      "column_name_10":"DESCTYPEC",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"description_type",
+      "column_name_10":"DESC_TYPE",
+      "data_type":"character varying(5)"
+   },
+   {  
+      "column_name":"direction",
+      "column_name_10":"DIRECTION",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"direction_code",
+      "column_name_10":"DIR_CODE",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"distance_related_flag_code",
+      "column_name_10":"DISTRELFLC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"district",
+      "column_name_10":"DISTRICT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"district_code",
+      "column_name_10":"DISTRICTC",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"distance_related_flag",
+      "column_name_10":"DIST_FLAG",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"district_label",
+      "column_name_10":"DIST_LABEL",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"div_rd_code",
+      "column_name_10":"DIVRDCODE",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"div_rd",
+      "column_name_10":"DIV_RD",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"doi_lga",
+      "column_name_10":"DOI_LGA",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"dse_region_code",
+      "column_name_10":"DSEREGIONC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"dse_region",
+      "column_name_10":"DSE_REGION",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"dual_status",
+      "column_name_10":"DUALSTAT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"dual_status_code",
+      "column_name_10":"DUALSTATC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"effective_from",
+      "column_name_10":"EFFEC_FROM",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"effective_to",
+      "column_name_10":"EFFEC_TO",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"elev_accuracy",
+      "column_name_10":"ELEVACC",
+      "data_type":"numeric"
+   },
+   {  
+      "column_name":"embankment_function",
+      "column_name_10":"EMBANK_FC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"ezi_road_name_label",
+      "column_name_10":"EZIRDNMLBL",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"ezi_road_name",
+      "column_name_10":"EZI_RDNAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"fcellname",
+      "column_name_10":"FCELLNAME",
+      "data_type":"character varying(6)"
+   },
+   {  
+      "column_name":"fcolor",
+      "column_name_10":"FCOLOR",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"feature_present",
+      "column_name_10":"FEATPRES",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"feature_present_code",
+      "column_name_10":"FEATPRESC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"feat_reli_date",
+      "column_name_10":"FEATRELDT",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"feature_status",
+      "column_name_10":"FEATSTATUS",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"feature_subtype",
+      "column_name_10":"FEATSUBTYP",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"feature",
+      "column_name_10":"FEATURE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"feature_code",
+      "column_name_10":"FEATUREC",
+      "data_type":"character varying(4)"
+   },
+   {  
+      "column_name":"feature_reliability",
+      "column_name_10":"FEAT_REL",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"feature_reliability_code",
+      "column_name_10":"FEAT_REL_C",
+      "data_type":"character varying(5)"
+   },
+   {  
+      "column_name":"ferry_type_code",
+      "column_name_10":"FERRYTYPEC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"ferry_type",
+      "column_name_10":"FERRY_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"ffont",
+      "column_name_10":"FFONT",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"fheight",
+      "column_name_10":"FHEIGHT",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"fjustification",
+      "column_name_10":"FJUSTIFCN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"flevel",
+      "column_name_10":"FLEVEL",
+      "data_type":"int"
+   },
+   {  
+      "column_name":"add_floor_type",
+      "column_name_10":"FLOOR_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"floor_type_abbreviation",
+      "column_name_10":"FLTYPEABB",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"fname",
+      "column_name_10":"FNAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"footprint_type_code",
+      "column_name_10":"FOOTPRTYC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"footprint_type",
+      "column_name_10":"FOOT_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"feature_quality_id",
+      "column_name_10":"FQID",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"from_precision",
+      "column_name_10":"FROM_PRECN",
+      "data_type":"double precision"
+   },
+   {  
+      "column_name":"from_survey_x",
+      "column_name_10":"FROM_SURVX",
+      "data_type":"double precision"
+   },
+   {  
+      "column_name":"from_survey_y",
+      "column_name_10":"FROM_SURVY",
+      "data_type":"double precision"
+   },
+   {  
+      "column_name":"feature_style",
+      "column_name_10":"FSTYLE",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"fsymbol",
+      "column_name_10":"FSYMBOL",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"feature_type",
+      "column_name_10":"FTYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"feature_type_code",
+      "column_name_10":"FTYPE_CODE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"function_code",
+      "column_name_10":"FUNCTIONC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"further_description",
+      "column_name_10":"FUR_DESC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"fweight",
+      "column_name_10":"FWEIGHT",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"fwidth",
+      "column_name_10":"FWIDTH",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"gazetted_locality_name",
+      "column_name_10":"GAZLOC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"gazettal_registration",
+      "column_name_10":"GAZREGN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"gazetted_lga_name",
+      "column_name_10":"GAZ_LGA",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"geocode_feature",
+      "column_name_10":"GCODEFEAT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"geocode_feature_code",
+      "column_name_10":"GCODEFEATC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"add_geocode_feature",
+      "column_name_10":"GCODE_FT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"gda94_lat",
+      "column_name_10":"GDA94_LAT",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"gda94_long",
+      "column_name_10":"GDA94_LONG",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"gnr_approved",
+      "column_name_10":"GNR_APPROV",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"graphic_type_code",
+      "column_name_10":"GRAPHTYPEC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"graph_type",
+      "column_name_10":"GRAPH_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"ground_relationship_code",
+      "column_name_10":"GRNDRELC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"ground_relationship",
+      "column_name_10":"GRND_REL",
+      "data_type":"character varying(5)"
+   },
+   {  
+      "column_name":"hierarchy",
+      "column_name_10":"HIERARCHY",
+      "data_type":"int"
+   },
+   {  
+      "column_name":"hierarchy",
+      "column_name_10":"HIERARCHY",
+      "table_names":[  
+         "hy_hierarchy"
+      ],
+      "data_type":"character varying(6)"
+   },
+   {  
+      "column_name":"hierarchy_code",
+      "column_name_10":"HIERARCHYC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"hierarchy_fname",
+      "column_name_10":"HIERCHY_NM",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"hierarchy_fullname",
+      "column_name_10":"HIER_FNAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"hierarchy_name",
+      "column_name_10":"HIER_NAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"hsa_flag_code",
+      "column_name_10":"HSAFLAGCD",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"hsa_flag",
+      "column_name_10":"HSA_FLAG",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"height_limit",
+      "column_name_10":"HT_LIMIT",
+      "data_type":"double precision"
+   },
+   {  
+      "column_name":"intersection",
+      "column_name_10":"INTERSECTN",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"intersection_code",
+      "column_name_10":"INTRSECNCD",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"is_deprecated",
+      "column_name_10":"ISDEPREC",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"is_primary_code",
+      "column_name_10":"ISPRIMARYC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"add_is_primary",
+      "column_name_10":"IS_PRIMARY",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"justification",
+      "column_name_10":"JUSTIFCN",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"last_reviewed",
+      "column_name_10":"LASTREVIEW",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"layer_gtype",
+      "column_name_10":"LAYERGTYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"left_locality",
+      "column_name_10":"LEFT_LOC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"lga",
+      "column_name_10":"LGA",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"lga_class_code",
+      "column_name_10":"LGACLASSC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"lga_class",
+      "column_name_10":"LGA_CLASS",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"lga_code",
+      "column_name_10":"LGA_CODE",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"lga_name",
+      "column_name_10":"LGA_NAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"lighted",
+      "column_name_10":"LIGHTED",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"lighted_code",
+      "column_name_10":"LIGHTEDC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"locality",
+      "column_name_10":"LOCALITY",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"locality_unique",
+      "column_name_10":"LOCUNIQUE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"location_descriptor",
+      "column_name_10":"LOC_DESC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"locality_road_id",
+      "column_name_10":"LOC_RD_ID",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"long_name",
+      "column_name_10":"LONGNAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"maintainer_table_name",
+      "column_name_10":"MAINTTABLE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"match_progress",
+      "column_name_10":"MATCH_PROG",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"material_contained_code",
+      "column_name_10":"MATCONTC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"material_conveyed",
+      "column_name_10":"MATCONVEY",
+      "data_type":"character varying(6)"
+   },
+   {  
+      "column_name":"material_conveyed_code",
+      "column_name_10":"MATCONVEYC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"material_contained",
+      "column_name_10":"MAT_CONT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"materials_conveyed",
+      "column_name_10":"MAT_CONVEY",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"maximum_scale",
+      "column_name_10":"MAX_SCALE",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"measuring_equipment",
+      "column_name_10":"MEAS_EQUIP",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"members",
+      "column_name_10":"MEMBERS",
+      "data_type":"int"
+   },
+   {  
+      "column_name":"method",
+      "column_name_10":"METHOD",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"mfb_district",
+      "column_name_10":"MFB_DIST",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"mfb_region",
+      "column_name_10":"MFB_REGION",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"mga_east",
+      "column_name_10":"MGA_EAST",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"mga_north",
+      "column_name_10":"MGA_NORTH",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"mine_structure",
+      "column_name_10":"MINESTR",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"mine_structure_code",
+      "column_name_10":"MINESTRC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"minimum_scale",
+      "column_name_10":"MIN_SCALE",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"mod2482",
+      "column_name_10":"MOD2482",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"multi_assessment_code",
+      "column_name_10":"MULTIASSC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"multi_assessment",
+      "column_name_10":"MULTI_ASS",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"name",
+      "column_name_10":"NAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"name_status",
+      "column_name_10":"NAMESTAT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"name_status_code",
+      "column_name_10":"NAMESTATC",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"named_feature_id",
+      "column_name_10":"NFEAT_ID",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"number_reliability",
+      "column_name_10":"NUM_RELIAB",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"nonunique_locality",
+      "column_name_10":"NUNIQ_LOC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"obligation",
+      "column_name_10":"OBLIGATION",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"official_name",
+      "column_name_10":"OFFICIALNM",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"organisation",
+      "column_name_10":"ORG",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"organisation_code",
+      "column_name_10":"ORG_C",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"origin",
+      "column_name_10":"ORIGIN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"origin_code",
+      "column_name_10":"ORIGINC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"outside_property_code",
+      "column_name_10":"OUTPROPC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"outside_property",
+      "column_name_10":"OUT_PROP",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"page_size",
+      "column_name_10":"PAGE_SIZE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"parent_feature_id",
+      "column_name_10":"PARENTFTID",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"parent_name",
+      "column_name_10":"PARENTNAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"parish_name",
+      "column_name_10":"PARISH",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"parish_code",
+      "column_name_10":"PARISHC",
+      "data_type":"character varying(4)"
+   },
+   {  
+      "column_name":"park_function_code",
+      "column_name_10":"PARKFNC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"park_function",
+      "column_name_10":"PARK_FC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"parent_method",
+      "column_name_10":"PARMETH",
+      "data_type":"character varying(8)"
+   },
+   {  
+      "column_name":"parent_method_desc",
+      "column_name_10":"PARMETHDSC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"part",
+      "column_name_10":"PART",
+      "data_type":"character varying(6)"
+   },
+   {  
+      "column_name":"parish_town",
+      "column_name_10":"PARTOWN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"parish_town_code",
+      "column_name_10":"PARTOWNC",
+      "data_type":"character varying(5)"
+   },
+   {  
+      "column_name":"parish_town_display",
+      "column_name_10":"PARTOWNDPY",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"parish_town_id",
+      "column_name_10":"PARTOWNID",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"part_code",
+      "column_name_10":"PART_CODE",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"pfi",
+      "column_name_10":"PFI",
+      "data_type":"bigint",
+      "primary_key_priority":2
+   },
+   {  
+      "column_name":"pfi_created",
+      "column_name_10":"PFI_CR",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"physical_condition_code",
+      "column_name_10":"PHYSCONDC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"physical_condition",
+      "column_name_10":"PHYS_COND",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"pipeline_function_code",
+      "column_name_10":"PIPELNFNC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"pipeline_function",
+      "column_name_10":"PIPE_FN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"place_name_label",
+      "column_name_10":"PLACELABEL",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"plan_accuracy",
+      "column_name_10":"PLANACC",
+      "data_type":"numeric"
+   },
+   {  
+      "column_name":"planning_scheme",
+      "column_name_10":"PLANSCHM",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"planning_scheme_code",
+      "column_name_10":"PLANSCHMC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"plantation_type_code",
+      "column_name_10":"PLANTNTYCD",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"plan_number",
+      "column_name_10":"PLAN_NO",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"plan_number_id",
+      "column_name_10":"PLAN_NUMID",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"plan_type",
+      "column_name_10":"PLAN_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"platform_type_code",
+      "column_name_10":"PLATFMTYC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"platform_type",
+      "column_name_10":"PLAT_TYPE",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"plan_integer_min",
+      "column_name_10":"PLININTMIN",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"plan_integer_current_max",
+      "column_name_10":"PLNINTCRMX",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"plan_integer_max",
+      "column_name_10":"PLNINTMXX",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"plantation_type",
+      "column_name_10":"PLNTN_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"plan_type_prefix",
+      "column_name_10":"PLNTYPEPR",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"plan_type_status",
+      "column_name_10":"PLNTYPEST",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"point",
+      "column_name_10":"POINT",
+      "data_type":"int"
+   },
+   {  
+      "column_name":"postcode",
+      "column_name_10":"postcode",
+      "data_type":"character varying(4)"
+   },
+   {  
+      "column_name":"property_status",
+      "column_name_10":"PROPSTATUS",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"property_pfi",
+      "column_name_10":"PR_PFI",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"property_type",
+      "column_name_10":"PR_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"property_type_code",
+      "column_name_10":"PR_TYPEC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"public_land_group",
+      "column_name_10":"PUBLANDGRP",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"rail_gauge_code",
+      "column_name_10":"RAILGAUGEC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"rail_gauge",
+      "column_name_10":"RAIL_GAUGE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"region",
+      "column_name_10":"REGION",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"region_code",
+      "column_name_10":"REGIONC",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"road_class_code",
+      "column_name_10":"RDCLASSC",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"road_relationship",
+      "column_name_10":"RDREL",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_relationship_code",
+      "column_name_10":"RDRELC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"road_restriction",
+      "column_name_10":"RDREST",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_restriction_code",
+      "column_name_10":"RDRESTC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"road_seal_code",
+      "column_name_10":"RDSEALC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"road_type_abbreviation",
+      "column_name_10":"RDTYPEABB",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_name_1",
+      "column_name_10":"RD_NAME1",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_name_2",
+      "column_name_10":"RD_NAME2",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_name_3",
+      "column_name_10":"RD_NAME3",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_name_4",
+      "column_name_10":"RD_NAME4",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_name_5",
+      "column_name_10":"RD_NAME5",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_name_6",
+      "column_name_10":"RD_NAME6",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_name_7",
+      "column_name_10":"RD_NAME7",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_suffix",
+      "column_name_10":"RD_SUF",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"road_suffix_1",
+      "column_name_10":"RD_SUF1",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_suffix_2",
+      "column_name_10":"RD_SUF2",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_suffix_3",
+      "column_name_10":"RD_SUF3",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_suffix_4",
+      "column_name_10":"RD_SUF4",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_suffix_5",
+      "column_name_10":"RD_SUF5",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_suffix_6",
+      "column_name_10":"RD_SUF6",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_suffix_7",
+      "column_name_10":"RD_SUF7",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_type_1",
+      "column_name_10":"RD_TYPE1",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_type_2",
+      "column_name_10":"RD_TYPE2",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_type_3",
+      "column_name_10":"RD_TYPE3",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_type_4",
+      "column_name_10":"RD_TYPE4",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_type_5",
+      "column_name_10":"RD_TYPE5",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_type_6",
+      "column_name_10":"RD_TYPE6",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_type_7",
+      "column_name_10":"RD_TYPE7",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"reef_type_code",
+      "column_name_10":"REEFTYPEC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"reef_type",
+      "column_name_10":"REEF_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"reftab_code_column_name",
+      "column_name_10":"REFCCNAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"reftab_decode_column_name",
+      "column_name_10":"REFDCCNAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"reftab_owner_name",
+      "column_name_10":"REFOWNNAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"reftab_table_name",
+      "column_name_10":"REFTABNAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"reftab_id",
+      "column_name_10":"REFTAB_ID",
+      "data_type":"int"
+   },
+   {  
+      "column_name":"registration_date",
+      "column_name_10":"REG_DATE",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"region_label",
+      "column_name_10":"REG_LABEL",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"related_feature_ufi",
+      "column_name_10":"RELF_UFI",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"responsible_business",
+      "column_name_10":"RESPBUS",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"responsible_business_code",
+      "column_name_10":"RESPBUSC",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"restrictions",
+      "column_name_10":"RESTRICTN",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"right_locality",
+      "column_name_10":"RIGHT_LOC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_class",
+      "column_name_10":"ROAD_CLASS",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_seal",
+      "column_name_10":"ROAD_SEAL",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_type",
+      "column_name_10":"ROAD_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"reftab_relationship_id",
+      "column_name_10":"RT_RELN_ID",
+      "data_type":"bigint",
+      "primary_key_priority":3
+   },
+   {  
+      "column_name":"runway_number",
+      "column_name_10":"RUNWAY_NO",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"scale",
+      "column_name_10":"SCALE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"scale_use",
+      "column_name_10":"SCALE_USE",
+      "data_type":"character varying(6)"
+   },
+   {  
+      "column_name":"scale_use_code",
+      "column_name_10":"SCALE_USEC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"scheme_code",
+      "column_name_10":"SCHMCODE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"scheme_type",
+      "column_name_10":"SCHMTYPE",
+      "data_type":"character varying(6)"
+   },
+   {  
+      "column_name":"sdrn_qinfo",
+      "column_name_10":"SDRN_QINFO",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"shoreline_datum",
+      "column_name_10":"SHORLNDAT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"shoreline_datum_code",
+      "column_name_10":"SHORLNDATC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"sort_order",
+      "column_name_10":"SORT_ORDER",
+      "data_type":"int"
+   },
+   {  
+      "column_name":"source",
+      "column_name_10":"SOURCE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"spi",
+      "column_name_10":"SPI",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"spi_code",
+      "column_name_10":"SPI_CODE",
+      "data_type":"int"
+   },
+   {  
+      "column_name":"sports_type_code",
+      "column_name_10":"SPORTSTYC",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"sports_type",
+      "column_name_10":"SPORT_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"source_code",
+      "column_name_10":"SRC_CODE",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"source_type",
+      "column_name_10":"SRC_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"source_type_code",
+      "column_name_10":"SRC_TYPE_C",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"source_verified",
+      "column_name_10":"SRC_VERIF",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"standard",
+      "column_name_10":"STANDARD",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"state",
+      "column_name_10":"STATE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"state_code",
+      "column_name_10":"STATE_CODE",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"status",
+      "column_name_10":"STATUS",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"status_code",
+      "column_name_10":"STAT_CODE",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"structure_name",
+      "column_name_10":"STRUCTNAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"structure_type",
+      "column_name_10":"STRUC_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"structure_type_code",
+      "column_name_10":"STR_TYPEC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"subdivision",
+      "column_name_10":"SUBDIV",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"substance_extracted_code",
+      "column_name_10":"SUBSEXTRC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"substance_extracted",
+      "column_name_10":"SUBST_EXT",
+      "data_type":"character varying(5)"
+   },
+   {  
+      "column_name":"superceded_pfi",
+      "column_name_10":"SUPER_PFI",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"supply_version",
+      "column_name_10":"SUPPLYVSN",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"surface_relationship_code",
+      "column_name_10":"SURFRELC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"surface_relationship",
+      "column_name_10":"SURF_REL",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"surface_type",
+      "column_name_10":"SURF_TYPE",
+      "data_type":"character varying(5)"
+   },
+   {  
+      "column_name":"surface_type_code",
+      "column_name_10":"SURF_TYPEC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"table_column_id",
+      "column_name_10":"TABCOLID",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"table_owner",
+      "column_name_10":"TABLEOWNER",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"table_name",
+      "column_name_10":"TABLE_NAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"tenure_type",
+      "column_name_10":"TENTYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"tenure_type_code",
+      "column_name_10":"TENTYPEC",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"tenure",
+      "column_name_10":"TENURE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"tenure_code",
+      "column_name_10":"TENUREC",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"tfb_district",
+      "column_name_10":"TFB_DIST",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"title",
+      "column_name_10":"TITLE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"tourist_type_code",
+      "column_name_10":"TOURTYPECD",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"tourist_type",
+      "column_name_10":"TOUR_TYPE",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"township_name",
+      "column_name_10":"TOWNSHIP",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"township_code",
+      "column_name_10":"TOWNSHIPC",
+      "data_type":"character varying(5)"
+   },
+   {  
+      "column_name":"to_precision",
+      "column_name_10":"TO_PRECN",
+      "data_type":"double precision"
+   },
+   {  
+      "column_name":"to_survey_x",
+      "column_name_10":"TO_SURVX",
+      "data_type":"double precision"
+   },
+   {  
+      "column_name":"to_survey_y",
+      "column_name_10":"TO_SURVY",
+      "data_type":"double precision"
+   },
+   {  
+      "column_name":"tracks_number_of",
+      "column_name_10":"TRACKS_NO",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"transferrable",
+      "column_name_10":"TRANSFER",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"transferrable_code",
+      "column_name_10":"TRANSFERC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"tree_density",
+      "column_name_10":"TREE_DEN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"tree_density_code",
+      "column_name_10":"TREE_DEN_C",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"text_height",
+      "column_name_10":"TXT_HT",
+      "data_type":"double precision"
+   },
+   {  
+      "column_name":"type_type_code",
+      "column_name_10":"TYPETYPEC",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"uc_cent_uc_type",
+      "column_name_10":"UC_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"uc_type_code",
+      "column_name_10":"UC_TYPEC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"ufi",
+      "column_name_10":"UFI",
+      "data_type":"bigint",
+      "primary_key_priority":1
+   },
+   {  
+      "column_name":"ufi_old",
+      "column_name_10":"UFI_OLD",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"create_date_ufi",
+      "column_name_10":"UFI_CR",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"unique_locality",
+      "column_name_10":"UNIQ_LOC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"usage",
+      "column_name_10":"USAGE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"usage_code",
+      "column_name_10":"USAGE_CODE",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"utility_function_code",
+      "column_name_10":"UTILFNC",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"utility_function",
+      "column_name_10":"UTIL_FN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"vicgrid66_east",
+      "column_name_10":"VG66_E",
+      "data_type":"numeric"
+   },
+   {  
+      "column_name":"vicgrid66_north",
+      "column_name_10":"VG66_N",
+      "data_type":"numeric"
+   },
+   {  
+      "column_name":"vicgrid94_east",
+      "column_name_10":"VG94_E",
+      "data_type":"numeric"
+   },
+   {  
+      "column_name":"vicgrid94_north",
+      "column_name_10":"VG94_N",
+      "data_type":"numeric"
+   },
+   {  
+      "column_name":"vicgov_region",
+      "column_name_10":"VGREG",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"vicgov_region_code",
+      "column_name_10":"VGREGC",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"vicgov_region_sname",
+      "column_name_10":"VGREGSNM",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"vicnames_id",
+      "column_name_10":"VICNAMESID",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"vicnames_status",
+      "column_name_10":"VICNAMESST",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"vicnames_status_code",
+      "column_name_10":"VICNMSTATC",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"vmadd_pfi_link",
+      "column_name_10":"VMADDPFILK",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"vicmap_feature_subtype",
+      "column_name_10":"VMFTSUBTYP",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"vicnames_feature_code",
+      "column_name_10":"VNFTCODE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"ward_label",
+      "column_name_10":"WARD_LABEL",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"ward_name",
+      "column_name_10":"WARD_NAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"ward_number",
+      "column_name_10":"WARD_NUM",
+      "data_type":"character varying(10)"
+   },
+   {  
+      "column_name":"ward_type",
+      "column_name_10":"WARD_TYPE",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"waterbody_state_code",
+      "column_name_10":"WATBDYSTC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"water_use_function_code",
+      "column_name_10":"WATUSEFNC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"waterbody_state",
+      "column_name_10":"WTR_BDY_ST",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"water_use_function",
+      "column_name_10":"WTR_USE_FN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"z_level_code",
+      "column_name_10":"ZLEVELC",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"zone_status",
+      "column_name_10":"ZNSTAT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"zone_status_code",
+      "column_name_10":"ZNSTATC",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"zone",
+      "column_name_10":"ZONE",
+      "data_type":"int"
+   },
+   {  
+      "column_name":"z_level",
+      "column_name_10":"Z_LEVEL",
+      "data_type":"text"
+   }
+]
