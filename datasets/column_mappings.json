@@ -145,6 +145,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"blue",
+      "column_name_10":"BLUE",
+      "data_type":"integer"
+   },
+   {  
       "column_name":"border_class",
       "column_name_10":"BORDER_CLS",
       "data_type":"text"
@@ -370,6 +375,11 @@
       "data_type":"character varying(1)"
    },
    {  
+      "column_name":"edition",
+      "column_name_10":"EDITION",
+      "data_type":"integer"
+   },
+   {  
       "column_name":"effective_from",
       "column_name_10":"EFFEC_FROM",
       "data_type":"date"
@@ -387,6 +397,11 @@
    {  
       "column_name":"embankment_function",
       "column_name_10":"EMBANK_FC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"ezi_address",
+      "column_name_10":"EZI_ADD",
       "data_type":"text"
    },
    {  
@@ -540,6 +555,16 @@
       "data_type":"character varying(3)"
    },
    {  
+      "column_name":"feature_id",
+      "column_name_10":"FEATURE_ID",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"from_ufi",
+      "column_name_10":"FROM_UFI",
+      "data_type":"bigint"
+   },
+   {  
       "column_name":"feature_type",
       "column_name_10":"FTYPE",
       "data_type":"text"
@@ -625,6 +650,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"green",
+      "column_name_10":"GREEN",
+      "data_type":"integer"
+   },
+   {  
       "column_name":"ground_relationship_code",
       "column_name_10":"GRNDRELC",
       "data_type":"character varying(1)"
@@ -633,6 +663,26 @@
       "column_name":"ground_relationship",
       "column_name_10":"GRND_REL",
       "data_type":"character varying(5)"
+   },
+   {  
+      "column_name":"group1",
+      "column_name_10":"GROUP1",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"group2",
+      "column_name_10":"GROUP2",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"group3",
+      "column_name_10":"GROUP3",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"group4",
+      "column_name_10":"GROUP4",
+      "data_type":"text"
    },
    {  
       "column_name":"hierarchy",
@@ -683,6 +733,16 @@
       "data_type":"double precision"
    },
    {  
+      "column_name":"icao_code",
+      "column_name_10":"ICAO_CODE",
+      "data_type":"character varying(4)"
+   },
+   {  
+      "column_name":"image_name",
+      "column_name_10":"IMAGE_NAME",
+      "data_type":"text"
+   },
+   {  
       "column_name":"intersection",
       "column_name_10":"INTERSECTN",
       "data_type":"character varying(3)"
@@ -716,6 +776,16 @@
       "column_name":"last_reviewed",
       "column_name_10":"LASTREVIEW",
       "data_type":"date"
+   },
+   {  
+      "column_name":"label_use_code",
+      "column_name_10":"LABELUSE_C",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"latitude",
+      "column_name_10":"LATITUDE",
+      "data_type":"real"
    },
    {  
       "column_name":"layer_gtype",
@@ -763,6 +833,11 @@
       "data_type":"character varying(1)"
    },
    {  
+      "column_name":"locality_name_label",
+      "column_name_10":"LOC_LABEL",
+      "data_type":"text"
+   },
+   {  
       "column_name":"locality",
       "column_name_10":"LOCALITY",
       "data_type":"text"
@@ -783,6 +858,11 @@
       "data_type":"bigint"
    },
    {  
+      "column_name":"longitude",
+      "column_name_10":"LONGITUDE",
+      "data_type":"real"
+   },
+   {  
       "column_name":"long_name",
       "column_name_10":"LONGNAME",
       "data_type":"text"
@@ -791,6 +871,21 @@
       "column_name":"maintainer_table_name",
       "column_name_10":"MAINTTABLE",
       "data_type":"text"
+   },
+   {  
+      "column_name":"map_name",
+      "column_name_10":"MAP_NAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"map_number",
+      "column_name_10":"MAP_NO",
+      "data_type":"character varying(10)"
+   },
+   {  
+      "column_name":"map_square",
+      "column_name_10":"MAP_SQUARE",
+      "data_type":"character varying(4)"
    },
    {  
       "column_name":"match_progress",
@@ -863,6 +958,11 @@
       "data_type":"real"
    },
    {  
+      "column_name":"mga_zone",
+      "column_name_10":"MGA_ZONE",
+      "data_type":"integer"
+   },
+   {  
       "column_name":"mine_structure",
       "column_name_10":"MINESTR",
       "data_type":"text"
@@ -895,6 +995,16 @@
    {  
       "column_name":"name",
       "column_name_10":"NAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"name_id",
+      "column_name_10":"NAME_ID",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"name_label",
+      "column_name_10":"NAME_LABEL",
       "data_type":"text"
    },
    {  
@@ -1066,6 +1176,16 @@
    {  
       "column_name":"pipeline_function",
       "column_name_10":"PIPE_FN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"place_id",
+      "column_name_10":"PLACE_ID",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"place_name",
+      "column_name_10":"PLACE_NAME",
       "data_type":"text"
    },
    {  
@@ -1349,6 +1469,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"red",
+      "column_name_10":"RED",
+      "data_type":"integer"
+   },
+   {  
       "column_name":"reef_type_code",
       "column_name_10":"REEFTYPEC",
       "data_type":"character varying(1)"
@@ -1424,6 +1549,16 @@
       "data_type":"text"
    },
    {  
+      "column_name":"road_name",
+      "column_name_10":"ROAD_NAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"road_rel",
+      "column_name_10":"ROAD_REL",
+      "data_type":"character varying(1)"
+   },
+   {  
       "column_name":"road_seal",
       "column_name_10":"ROAD_SEAL",
       "data_type":"text"
@@ -1432,6 +1567,16 @@
       "column_name":"road_type",
       "column_name_10":"ROAD_TYPE",
       "data_type":"text"
+   },
+   {  
+      "column_name":"rotation",
+      "column_name_10":"ROTATION",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"route_no",
+      "column_name_10":"ROUTE_NO",
+      "data_type":"character varying(5)"
    },
    {  
       "column_name":"reftab_relationship_id",
@@ -1550,6 +1695,11 @@
       "data_type":"character varying(3)"
    },
    {  
+      "column_name":"state_name",
+      "column_name_10":"STATE_NAME",
+      "data_type":"text"
+   },
+   {  
       "column_name":"status",
       "column_name_10":"STATUS",
       "data_type":"text"
@@ -1660,9 +1810,24 @@
       "data_type":"text"
    },
    {  
+      "column_name":"theme1",
+      "column_name_10":"THEME1",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"theme2",
+      "column_name_10":"THEME2",
+      "data_type":"text"
+   },
+   {  
       "column_name":"title",
       "column_name_10":"TITLE",
       "data_type":"text"
+   },
+   {  
+      "column_name":"to_ufi",
+      "column_name_10":"TO_UFI",
+      "data_type":"bigint"
    },
    {  
       "column_name":"tourist_type_code",
@@ -1673,6 +1838,11 @@
       "column_name":"tourist_type",
       "column_name_10":"TOUR_TYPE",
       "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"town",
+      "column_name_10":"TOWN",
+      "data_type":"text"
    },
    {  
       "column_name":"township_name",
@@ -1751,8 +1921,18 @@
       "primary_key_priority":1
    },
    {  
+      "column_name":"ufi_left",
+      "column_name_10":"UFI_LEFT",
+      "data_type":"bigint"
+   },
+   {  
       "column_name":"ufi_old",
       "column_name_10":"UFI_OLD",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"ufi_right",
+      "column_name_10":"UFI_RIGHT",
       "data_type":"bigint"
    },
    {  
@@ -1773,6 +1953,11 @@
    {  
       "column_name":"usage_code",
       "column_name_10":"USAGE_CODE",
+      "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"user_type",
+      "column_name_10":"USER_TYPE",
       "data_type":"character varying(1)"
    },
    {  
@@ -1821,6 +2006,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"vicmap_id",
+      "column_name_10":"VICMAP_ID",
+      "data_type":"bigint"
+   },
+   {  
       "column_name":"vicnames_id",
       "column_name_10":"VICNAMESID",
       "data_type":"bigint"
@@ -1834,6 +2024,11 @@
       "column_name":"vicnames_status_code",
       "column_name_10":"VICNMSTATC",
       "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"vmadd_pfi",
+      "column_name_10":"VMADD_PFI",
+      "data_type":"bigint"
    },
    {  
       "column_name":"vmadd_pfi_link",
@@ -1891,9 +2086,34 @@
       "data_type":"text"
    },
    {  
+      "column_name":"x_coord",
+      "column_name_10":"X_COORD",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"y_coord",
+      "column_name_10":"Y_COORD",
+      "data_type":"real"
+   },
+   {  
+      "column_name":"z_coord",
+      "column_name_10":"Z_COORD",
+      "data_type":"real"
+   },
+   {  
       "column_name":"z_level_code",
       "column_name_10":"ZLEVELC",
       "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"zone_code",
+      "column_name_10":"ZONE_CODE",
+      "data_type":"character varying(7)"
+   },
+   {  
+      "column_name":"zone_number",
+      "column_name_10":"ZONE_NUM",
+      "data_type":"text"
    },
    {  
       "column_name":"zone_status",

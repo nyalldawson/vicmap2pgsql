@@ -137,6 +137,7 @@ class Database():
         """Copies data from one table to another"""
         sql = 'INSERT INTO {} ( {} ) SELECT {} FROM {}'.format(self.encodeTableName(dest_schema, dest_table), ','.join(dest_columns),
                                                                ','.join(src_columns), self.encodeTableName(src_schema, src_table))
+        print sql
         return self.runSql(sql)
 
     def schemaExists(self, schema):

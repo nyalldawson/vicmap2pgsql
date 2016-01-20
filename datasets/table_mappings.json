@@ -83,5 +83,65 @@
       "dataset":"vmadmin",
       "table":"ward_2012",
       "force_multi":true
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"building_polygon",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"foi_index_extent",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"foi_line",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"foi_polygon",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"geo_area_hydro_label",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"geo_area_relief_label",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmindex",
+      "table":"vicroads_mapindex_250_ed8",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_postcode_polygon",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_vicgov_region",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmplan",
+      "table":"plan_overlay",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmplan",
+      "table":"plan_ugb",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmplan",
+      "table":"plan_zone",
+      "force_multi":true
    }
 ]

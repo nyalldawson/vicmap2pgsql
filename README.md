@@ -34,6 +34,7 @@ Currently supported datasets are:
 - VMFEAT
 - VMINDEX
 - VMLITE
+- VMPLAN
 - VMREFTAB
 
 More to come...
