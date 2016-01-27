@@ -18,6 +18,8 @@ if __name__ == "__main__":
         'dataset', nargs='?', help='Optional specific dataset from subfolder, eg lga_polygon. If omitted whole folder will be imported.')
     parser.add_argument('--recreate', action='store_true', default=False,
                         help='Forces dropping any existing tables and recreating. Be careful!')
+    parser.add_argument('--skipshpimport', action='store_true', default=False,
+                        help='Skips the initial shp file import to a temporary table in the public schema. For debugging only.')
     args = parser.parse_args()
 
     folder = args.folder.lower()
@@ -26,6 +28,7 @@ if __name__ == "__main__":
     else:
         dataset = None
     recreate = args.recreate
+    skip_shape_import = args.skipshpimport
     print "Importing from {}".format(folder.upper())
     if dataset:
         print "  Dataset: {}".format(dataset.upper())
@@ -53,6 +56,7 @@ if __name__ == "__main__":
 
     i = Importer(Database())
     i.recreate = recreate
+    i.skip_shape_import = skip_shape_import
 
     for idx, d in enumerate(datasets):
         print "\n\nImporting {}/{}: {}\n-------------".format(idx + 1, len(datasets), d)

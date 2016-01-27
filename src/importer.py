@@ -11,6 +11,7 @@ class Importer():
     def __init__(self, db):
         self.db = db
         self.recreate = False
+        self.skip_shape_import = False
 
         with open('datasets\\column_mappings.json') as mappings:
             self.columnMappings = json.load(mappings)
@@ -21,7 +22,8 @@ class Importer():
     def importLayer(self, path, schema, table):
         """ Imports the specified layer """
 
-        self.importLayerUsingOGR(path, 'public', schema, table)
+        if not self.skip_shape_import:
+            self.importLayerUsingOGR(path, 'public', schema, table)
 
         if not self.db.schemaExists(schema):
             print "Existing schema {} does not exist".format(schema)
@@ -62,6 +64,31 @@ class Importer():
             return True
         else:
             return False
+
+    def addSerialId(self, schema, table):
+        """ Returns whether a table should have a manually created serial primary key field, if so, returns the name
+        of the desired ID column.
+        """
+        matched_map = [m for m in self.tableMappings if m['dataset'].upper(
+        ) == schema.upper() and m['table'].upper() == table.upper()]
+        if not len(matched_map) == 1:
+            return None
+        if 'create_serial_id' in matched_map[0].keys():
+            return matched_map[0]['create_serial_id']
+        else:
+            return None
+
+    def tablePrimaryKey(self, schema, table):
+        """ Returns the manually set primary key for a table
+        """
+        matched_map = [m for m in self.tableMappings if m['dataset'].upper(
+        ) == schema.upper() and m['table'].upper() == table.upper()]
+        if not len(matched_map) == 1:
+            return None
+        if 'id' in matched_map[0].keys():
+            return matched_map[0]['id']
+        else:
+            return None
 
     def importLayerUsingOGR(self, path, temp_schema, schema, table):
         """ Imports a given layer to PostGIS using OGR2OGR"""
@@ -151,6 +178,7 @@ class Importer():
         pk_index = -1
         min_pk_priority = 999
         geom_col = None
+        table_primary_key = self.tablePrimaryKey(dest_schema, dest_table)
         for i, c in enumerate(self.db.getTableColumnDefs(temp_schema, temp_table)):
             extra_defs = ''
 
@@ -170,7 +198,10 @@ class Importer():
                 dest_schema, dest_table, c['name'])
             assert matched_map, "could not match: {}".format(c)
 
-            if 'primary_key_priority' in matched_map:
+            if table_primary_key and c['name'].upper() == table_primary_key.upper():
+                pk_index = i - 1
+                min_pk_priority = 0
+            elif 'primary_key_priority' in matched_map:
                 current_pk_priority = matched_map['primary_key_priority']
                 if current_pk_priority < min_pk_priority:
                     min_pk_priority = current_pk_priority
@@ -178,6 +209,11 @@ class Importer():
 
             dest_columns.append(
                 [matched_map['column_name'], matched_map['data_type'], extra_defs])
+
+        create_serial_id = self.addSerialId(dest_schema, dest_table)
+        if create_serial_id:
+            dest_columns.insert(0, [create_serial_id, 'serial', ''])
+            pk_index = 0
 
         assert pk_index > - \
             1, "Could not determine primary key for {}".format(dest_table)
