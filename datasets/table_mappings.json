@@ -85,6 +85,17 @@
       "force_multi":true
    },
    {  
+      "dataset":"vmcltenure",
+      "table":"cl_tenure_view",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmcltenure",
+      "table":"plm25",
+      "force_multi":true,
+      "id":"plm_id"
+   },
+   {  
       "dataset":"vmfeat",
       "table":"building_polygon",
       "force_multi":true
@@ -113,6 +124,12 @@
       "dataset":"vmfeat",
       "table":"geo_area_relief_label",
       "force_multi":true
+   },
+   {  
+      "dataset":"vmimagery",
+      "table":"iwsfootprints",
+      "force_multi":true,
+      "create_serial_id":"id"
    },
    {  
       "dataset":"vmindex",

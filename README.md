@@ -30,11 +30,23 @@ SET OGR2OGR=C:\OSGeo4W64\bin\ogr2ogr.exe
 
 Currently supported datasets are:
 
+- VMADD
 - VMADMIN
+- VMCLTENURE
+- VMELEV
 - VMFEAT
+- VMHYDRO
+- VMIMAGERY (CIP IWS Footprints)
 - VMINDEX
+- Melway Map Indexes
 - VMLITE
 - VMPLAN
 - VMREFTAB
+- VMTRANS
+- VMVEG
+
+Additional supported layers:
+
+- plm25
 
 More to come...

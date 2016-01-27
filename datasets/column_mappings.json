@@ -35,6 +35,11 @@
       "data_type":"character varying(1)"
    },
    {  
+      "column_name":"additional_acts",
+      "column_name_10":"ADDTL_ACTS",
+      "data_type":"text"
+   },
+   {  
       "column_name":"agd66_lat",
       "column_name_10":"AGD66_LAT",
       "data_type":"real"
@@ -53,6 +58,11 @@
       "column_name":"alternate_locality_id",
       "column_name_10":"ALTLOCID",
       "data_type":"integer"
+   },
+   {  
+      "column_name":"altitude",
+      "column_name_10":"ALTITUDE",
+      "data_type":"real"
    },
    {  
       "column_name":"amg_east",
@@ -78,6 +88,16 @@
       "column_name":"app_plan_description",
       "column_name_10":"APPLANDESC",
       "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"area_code",
+      "column_name_10":"AREA_CODE",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"area_ha",
+      "column_name_10":"AREA_HA",
+      "data_type":"real"
    },
    {  
       "column_name":"attr_reli_date",
@@ -135,6 +155,11 @@
       "data_type":"character varying(1)"
    },
    {  
+      "column_name":"begin_date",
+      "column_name_10":"BEGIN_DATE",
+      "data_type":"date"
+   },
+   {  
       "column_name":"blg_unit_type_abbreviation",
       "column_name_10":"BLGUNTTPAB",
       "data_type":"text"
@@ -155,6 +180,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"building",
+      "column_name_10":"BUILDING",
+      "data_type":"text"
+   },
+   {  
       "column_name":"building_use_code",
       "column_name_10":"BUILDUSEC",
       "data_type":"character varying(2)"
@@ -163,6 +193,36 @@
       "column_name":"building_use",
       "column_name_10":"BUILD_USE",
       "data_type":"text"
+   },
+   {  
+      "column_name":"blg_unit_id_1",
+      "column_name_10":"BUNIT_ID1",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"blg_unit_id_2",
+      "column_name_10":"BUNIT_ID2",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"blg_unit_prefix_1",
+      "column_name_10":"BUNIT_PRE1",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"blg_unit_prefix_2",
+      "column_name_10":"BUNIT_PRE2",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"blg_unit_suffix_1",
+      "column_name_10":"BUNIT_SUF1",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"blg_unit_suffix_2",
+      "column_name_10":"BUNIT_SUF2",
+      "data_type":"character varying(2)"
    },
    {  
       "column_name":"bouyed",
@@ -190,9 +250,19 @@
       "data_type":"character varying(1)"
    },
    {  
+      "column_name":"cl_tenure_pfi",
+      "column_name_10":"CLTEN_PFI",
+      "data_type":"character varying(10)"
+   },
+   {  
       "column_name":"class_code",
       "column_name_10":"CLASS_CODE",
       "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"compression",
+      "column_name_10":"CMPRESS",
+      "data_type":"text"
    },
    {  
       "column_name":"code",
@@ -213,6 +283,21 @@
       "column_name":"column_name",
       "column_name_10":"COLUMNNM",
       "data_type":"text"
+   },
+   {  
+      "column_name":"complex",
+      "column_name_10":"COMPLEX",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"conpfi1",
+      "column_name_10":"CONPFI1",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"conpfi2",
+      "column_name_10":"CONPFI2",
+      "data_type":"bigint"
    },
    {  
       "column_name":"construction",
@@ -270,6 +355,21 @@
       "data_type":"date"
    },
    {  
+      "column_name":"custodian",
+      "column_name_10":"CUSTODIAN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"date_established",
+      "column_name_10":"DATE_EST",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"date_lccap",
+      "column_name_10":"DATE_LCCAP",
+      "data_type":"date"
+   },
+   {  
       "column_name":"data_sour_code",
       "column_name_10":"DATASRCC",
       "data_type":"text"
@@ -295,6 +395,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"description",
+      "column_name_10":"DESCRIPT",
+      "data_type":"text"
+   },
+   {  
       "column_name":"desc_type_code",
       "column_name_10":"DESCTYPEC",
       "data_type":"character varying(2)"
@@ -313,6 +418,36 @@
       "column_name":"direction_code",
       "column_name_10":"DIR_CODE",
       "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"disp_number_1",
+      "column_name_10":"DISP_NUM1",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"disp_number_2",
+      "column_name_10":"DISP_NUM2",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"disp_prefix_1",
+      "column_name_10":"DISP_PREF1",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"disp_prefix_2",
+      "column_name_10":"DISP_PREF2",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"disp_suffix_1",
+      "column_name_10":"DISP_SUF1",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"disp_suffix_2",
+      "column_name_10":"DISP_SUF2",
+      "data_type":"character varying(2)"
    },
    {  
       "column_name":"distance_related_flag_code",
@@ -373,6 +508,11 @@
       "column_name":"dual_status_code",
       "column_name_10":"DUALSTATC",
       "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"ecwp",
+      "column_name_10":"ECWP",
+      "data_type":"text"
    },
    {  
       "column_name":"edition",
@@ -495,9 +635,39 @@
       "data_type":"text"
    },
    {  
+      "column_name":"floor_prefix_1",
+      "column_name_10":"FL_PREF1",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"floor_prefix_2",
+      "column_name_10":"FL_PREF2",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"floor_suffix_1",
+      "column_name_10":"FL_SUF1",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"floor_suffix_2",
+      "column_name_10":"FL_SUF2",
+      "data_type":"character varying(2)"
+   },
+   {  
       "column_name":"flevel",
       "column_name_10":"FLEVEL",
       "data_type":"int"
+   },
+   {  
+      "column_name":"floor_no_1",
+      "column_name_10":"FLOOR_NO_1",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"floor_no_2",
+      "column_name_10":"FLOOR_NO_2",
+      "data_type":"integer"
    },
    {  
       "column_name":"add_floor_type",
@@ -527,6 +697,11 @@
    {  
       "column_name":"feature_quality_id",
       "column_name_10":"FQID",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"format",
+      "column_name_10":"FORMAT",
       "data_type":"text"
    },
    {  
@@ -635,6 +810,16 @@
       "data_type":"real"
    },
    {  
+      "column_name":"gener_desc",
+      "column_name_10":"GENER_DESC",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"gener_type",
+      "column_name_10":"GENER_TYPE",
+      "data_type":"integer"
+   },
+   {  
       "column_name":"gnr_approved",
       "column_name_10":"GNR_APPROV",
       "data_type":"character varying(1)"
@@ -693,7 +878,8 @@
       "column_name":"hierarchy",
       "column_name_10":"HIERARCHY",
       "table_names":[  
-         "hy_hierarchy"
+         "hy_hierarchy",
+         "hy_watercourse"
       ],
       "data_type":"character varying(6)"
    },
@@ -733,6 +919,41 @@
       "data_type":"double precision"
    },
    {  
+      "column_name":"hsa_unit_id",
+      "column_name_10":"HSAUNITID",
+      "data_type":"character varying(5)"
+   },
+   {  
+      "column_name":"house_number_1",
+      "column_name_10":"HSE_NUM1",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"house_number_2",
+      "column_name_10":"HSE_NUM2",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"house_prefix_1",
+      "column_name_10":"HSE_PREF1",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"house_prefix_2",
+      "column_name_10":"HSE_PREF2",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"house_suffix_1",
+      "column_name_10":"HSE_SUF1",
+      "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"house_suffix_2",
+      "column_name_10":"HSE_SUF2",
+      "data_type":"character varying(2)"
+   },
+   {  
       "column_name":"icao_code",
       "column_name_10":"ICAO_CODE",
       "data_type":"character varying(4)"
@@ -740,6 +961,11 @@
    {  
       "column_name":"image_name",
       "column_name_10":"IMAGE_NAME",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"impl_state",
+      "column_name_10":"IMPL_STAT",
       "data_type":"text"
    },
    {  
@@ -768,6 +994,16 @@
       "data_type":"character varying(3)"
    },
    {  
+      "column_name":"iucn_cat",
+      "column_name_10":"IUCN_CAT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"iws_url",
+      "column_name_10":"IWS_URL",
+      "data_type":"text"
+   },
+   {  
       "column_name":"justification",
       "column_name_10":"JUSTIFCN",
       "data_type":"character varying(2)"
@@ -776,6 +1012,21 @@
       "column_name":"last_reviewed",
       "column_name_10":"LASTREVIEW",
       "data_type":"date"
+   },
+   {  
+      "column_name":"label",
+      "column_name_10":"LABEL",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"label_short",
+      "column_name_10":"LABELSHORT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"label_address",
+      "column_name_10":"LABEL_ADD",
+      "data_type":"character varying(1)"
    },
    {  
       "column_name":"label_use_code",
@@ -868,6 +1119,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"lu_code",
+      "column_name_10":"LU_CODE",
+      "data_type":"bigint"
+   },
+   {  
       "column_name":"maintainer_table_name",
       "column_name_10":"MAINTTABLE",
       "data_type":"text"
@@ -933,6 +1189,11 @@
       "data_type":"int"
    },
    {  
+      "column_name":"mesh_block",
+      "column_name_10":"MESH_BLOCK",
+      "data_type":"character varying(11)"
+   },
+   {  
       "column_name":"method",
       "column_name_10":"METHOD",
       "data_type":"text"
@@ -978,6 +1239,31 @@
       "data_type":"bigint"
    },
    {  
+      "column_name":"mmgt_ongen",
+      "column_name_10":"MMGT_ONGEN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"mmgt_ongrd",
+      "column_name_10":"MMGT_ONGRD",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"mmt_gen",
+      "column_name_10":"MMTGEN",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"mng_group",
+      "column_name_10":"MNG_GROUP",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"mng_spec",
+      "column_name_10":"MNG_SPEC",
+      "data_type":"text"
+   },
+   {  
       "column_name":"mod2482",
       "column_name_10":"MOD2482",
       "data_type":"real"
@@ -1008,6 +1294,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"name_source",
+      "column_name_10":"NAME_SOURC",
+      "data_type":"text"
+   },
+   {  
       "column_name":"name_status",
       "column_name_10":"NAMESTAT",
       "data_type":"text"
@@ -1021,6 +1312,21 @@
       "column_name":"named_feature_id",
       "column_name_10":"NFEAT_ID",
       "data_type":"integer"
+   },
+   {  
+      "column_name":"nre_route",
+      "column_name_10":"NRE_ROUTE",
+      "data_type":"character varying(6)"
+   },
+   {  
+      "column_name":"num_address",
+      "column_name_10":"NUM_ADD",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"num_road_address",
+      "column_name_10":"NUM_RD_ADD",
+      "data_type":"text"
    },
    {  
       "column_name":"number_reliability",
@@ -1076,6 +1382,11 @@
       "column_name":"page_size",
       "column_name_10":"PAGE_SIZE",
       "data_type":"text"
+   },
+   {  
+      "column_name":"parcel",
+      "column_name_10":"PARCEL",
+      "data_type":"character varying(1)"
    },
    {  
       "column_name":"parent_feature_id",
@@ -1179,6 +1490,16 @@
       "data_type":"text"
    },
    {  
+      "column_name":"park_area_type",
+      "column_name_10":"PKAREA_TY",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"perimeter",
+      "column_name_10":"PERIMETER",
+      "data_type":"real"
+   },
+   {  
       "column_name":"place_id",
       "column_name_10":"PLACE_ID",
       "data_type":"bigint"
@@ -1269,14 +1590,44 @@
       "data_type":"text"
    },
    {  
+      "column_name":"plm_id",
+      "column_name_10":"PLM_ID",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"plu_code",
+      "column_name_10":"PLU_CODE",
+      "data_type":"character varying(3)"
+   },
+   {  
       "column_name":"point",
       "column_name_10":"POINT",
       "data_type":"int"
    },
    {  
+      "column_name":"poly_source",
+      "column_name_10":"POLY_SOURC",
+      "data_type":"text"
+   },
+   {  
       "column_name":"postcode",
       "column_name_10":"postcode",
       "data_type":"character varying(4)"
+   },
+   {  
+      "column_name":"prims_id",
+      "column_name_10":"PRIMS_ID",
+      "data_type":"integer"
+   },
+   {  
+      "column_name":"projection",
+      "column_name_10":"PROJECTION",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"property",
+      "column_name_10":"PROPERTY",
+      "data_type":"character varying(1)"
    },
    {  
       "column_name":"property_status",
@@ -1314,6 +1665,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"rec_code",
+      "column_name_10":"REC_CODE",
+      "data_type":"character varying(6)"
+   },
+   {  
       "column_name":"region",
       "column_name_10":"REGION",
       "data_type":"text"
@@ -1322,6 +1678,16 @@
       "column_name":"region_code",
       "column_name_10":"REGIONC",
       "data_type":"integer"
+   },
+   {  
+      "column_name":"res_date",
+      "column_name_10":"RES_DATE",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"road_align",
+      "column_name_10":"ROAD_ALIGN",
+      "data_type":"character varying(1)"
    },
    {  
       "column_name":"road_class_code",
@@ -1469,6 +1835,16 @@
       "data_type":"text"
    },
    {  
+      "column_name":"rec_cat",
+      "column_name_10":"REC_CAT",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"rec_sbcat",
+      "column_name_10":"REC_SBCAT",
+      "data_type":"text"
+   },
+   {  
       "column_name":"red",
       "column_name_10":"RED",
       "data_type":"integer"
@@ -1524,6 +1900,11 @@
       "data_type":"bigint"
    },
    {  
+      "column_name":"resolution",
+      "column_name_10":"RESOLUTION",
+      "data_type":"real"
+   },
+   {  
       "column_name":"responsible_business",
       "column_name_10":"RESPBUS",
       "data_type":"text"
@@ -1569,6 +1950,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"road_ufi",
+      "column_name_10":"ROAD_UFI",
+      "data_type":"bigint"
+   },
+   {  
       "column_name":"rotation",
       "column_name_10":"ROTATION",
       "data_type":"real"
@@ -1603,6 +1989,11 @@
       "column_name":"scale_use_code",
       "column_name_10":"SCALE_USEC",
       "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"schedule",
+      "column_name_10":"SCHED",
+      "data_type":"text"
    },
    {  
       "column_name":"scheme_code",
@@ -1660,8 +2051,23 @@
       "data_type":"text"
    },
    {  
+      "column_name":"source_begin_date",
+      "column_name_10":"SRC_BEGIN",
+      "data_type":"date"
+   },
+   {  
       "column_name":"source_code",
       "column_name_10":"SRC_CODE",
+      "data_type":"character varying(3)"
+   },
+   {  
+      "column_name":"source_end_date",
+      "column_name_10":"SRC_END",
+      "data_type":"date"
+   },
+   {  
+      "column_name":"source_organization_code",
+      "column_name_10":"SRC_ORG_C",
       "data_type":"character varying(3)"
    },
    {  
@@ -1710,6 +2116,11 @@
       "data_type":"character varying(1)"
    },
    {  
+      "column_name":"stgame_res",
+      "column_name_10":"STGAME_RES",
+      "data_type":"text"
+   },
+   {  
       "column_name":"structure_name",
       "column_name_10":"STRUCTNAME",
       "data_type":"text"
@@ -1723,6 +2134,11 @@
       "column_name":"structure_type_code",
       "column_name_10":"STR_TYPEC",
       "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"study_area",
+      "column_name_10":"STUDY_AREA",
+      "data_type":"text"
    },
    {  
       "column_name":"subdivision",
@@ -1805,8 +2221,23 @@
       "data_type":"character varying(3)"
    },
    {  
+      "column_name":"tenure_id",
+      "column_name_10":"TENURE_ID",
+      "data_type":"bigint"
+   },
+   {  
+      "column_name":"text_width",
+      "column_name_10":"TEXT_WIDTH",
+      "data_type":"real"
+   },
+   {  
       "column_name":"tfb_district",
       "column_name_10":"TFB_DIST",
+      "data_type":"text"
+   },
+   {  
+      "column_name":"theme",
+      "column_name_10":"THEME",
       "data_type":"text"
    },
    {  
@@ -1900,6 +2331,19 @@
       "data_type":"double precision"
    },
    {  
+      "column_name":"type",
+      "column_name_10":"TYPE",
+      "data_type":"text",
+      "table_names":[  
+         "iwsfootprints"
+      ]
+   },
+   {  
+      "column_name":"type_option",
+      "column_name_10":"TYPEOPTION",
+      "data_type":"text"
+   },
+   {  
       "column_name":"type_type_code",
       "column_name_10":"TYPETYPEC",
       "data_type":"character varying(2)"
@@ -1971,6 +2415,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"version_date",
+      "column_name_10":"VERS_DATE",
+      "data_type":"date"
+   },
+   {  
       "column_name":"vicgrid66_east",
       "column_name_10":"VG66_E",
       "data_type":"numeric"
@@ -2024,6 +2473,11 @@
       "column_name":"vicnames_status_code",
       "column_name_10":"VICNMSTATC",
       "data_type":"character varying(2)"
+   },
+   {  
+      "column_name":"view_pfi",
+      "column_name_10":"VIEW_PFI",
+      "data_type":"bigint"
    },
    {  
       "column_name":"vmadd_pfi",
