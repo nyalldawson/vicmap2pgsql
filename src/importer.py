@@ -65,7 +65,7 @@ class Importer():
         matched_map = [m for m in self.tableMappings if m['dataset'].upper(
         ) == schema.upper() and m['table'].upper() == table.upper()]
         if not len(matched_map) == 1:
-            return False
+            return schema, table
         dest_schema = schema
         dest_table = table
         if 'dest_table' in matched_map[0].keys():
