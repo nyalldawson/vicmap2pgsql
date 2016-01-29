@@ -1,5 +1,11 @@
 [  
    {  
+      "dataset":"vmadd",
+      "table":"address_1",
+      "dest_table":"address",
+	  "append":true
+   },
+   {  
       "dataset":"vmadmin",
       "table":"ad_vicgov_region",
       "force_multi":true

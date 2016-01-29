@@ -25,27 +25,33 @@ class Importer():
         if not self.skip_shape_import:
             self.importLayerUsingOGR(path, 'public', schema, table)
 
-        if not self.db.schemaExists(schema):
-            print "Existing schema {} does not exist".format(schema)
-            self.db.createSchema(schema)
+        dest_schema, dest_table = self.destTable(schema, table)
+
+        if not self.db.schemaExists(dest_schema):
+            print "Existing schema {} does not exist".format(dest_schema)
+            self.db.createSchema(dest_schema)
 
         if self.recreate:
             # Possibly should drop cascaded, but that's dangerous...
-            self.db.dropTable(schema, table)
+            self.db.dropTable(dest_schema, dest_table)
 
-        if not self.db.tableExists(schema, table):
-            print "Existing destination table {}.{} does not exist".format(schema, table)
-            if self.createTableDefinition('public', table, schema, table):
+        append = self.shouldAppendTable(schema, table)
+        if not self.db.tableExists(dest_schema, dest_table):
+            print "Existing destination table {}.{} does not exist".format(dest_schema, dest_table)
+            if self.createTableDefinition('public', table, dest_schema, dest_table):
                 print "Created!"
         else:
-            self.db.truncateTable(schema, table)
+            if not append:
+                self.db.truncateTable(dest_schema, dest_table)
+            else:
+                print 'Append to existing table {}.{}'.format(dest_schema, dest_table)
 
-        assert self.copyData('public', table, schema,
-                             table), 'Could not copy data'
+        assert self.copyData('public', table, dest_schema,
+                             dest_table), 'Could not copy data'
 
-        self.db.vacuum(schema, table)
+        self.db.vacuum(dest_schema, dest_table)
 
-        count = self.db.recordCount(schema, table)
+        count = self.db.recordCount(dest_schema, dest_table)
         print 'Copied {} records to destination table'.format(count)
         assert count > 0, 'No records exist in destination table!'
 
@@ -53,6 +59,32 @@ class Importer():
         self.db.dropTable('public', table)
 
         return True
+
+    def destTable(self, schema, table):
+        """ Returns destination schema and table for a given input table """
+        matched_map = [m for m in self.tableMappings if m['dataset'].upper(
+        ) == schema.upper() and m['table'].upper() == table.upper()]
+        if not len(matched_map) == 1:
+            return False
+        dest_schema = schema
+        dest_table = table
+        if 'dest_table' in matched_map[0].keys():
+            dest_table = matched_map[0]['dest_table']
+        if 'dest_schema' in matched_map[0].keys():
+            dest_schema = matched_map[0]['dest_schema']
+
+        return dest_schema, dest_table
+
+    def shouldAppendTable(self, schema, table):
+        """ Returns whether a table should be appended to an existing table """
+        matched_map = [m for m in self.tableMappings if m['dataset'].upper(
+        ) == schema.upper() and m['table'].upper() == table.upper()]
+        if not len(matched_map) == 1:
+            return False
+        if 'append' in matched_map[0].keys() and matched_map[0]['append']:
+            return True
+        else:
+            return False
 
     def isMulti(self, schema, table):
         """ Returns whether a table should have MULTI* geometry type """
