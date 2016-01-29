@@ -160,5 +160,20 @@
       "dataset":"vmplan",
       "table":"plan_zone",
       "force_multi":true
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"parcel_view",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"property_view",
+      "force_multi":true
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"road_casement_polygon",
+      "force_multi":true
    }
 ]

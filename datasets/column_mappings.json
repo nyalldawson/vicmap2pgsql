@@ -50,6 +50,11 @@
       "data_type":"real"
    },
    {  
+      "column_name":"allotment",
+      "column_name_10":"ALLOTMENT",
+      "data_type":"character varying(15)"
+   },
+   {  
       "column_name":"alternate_locality",
       "column_name_10":"ALTLOC",
       "data_type":"text"
@@ -130,6 +135,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"base_pfi",
+      "column_name_10":"BASE_PFI",
+      "data_type":"bigint"
+   },
+   {  
       "column_name":"beacon_present",
       "column_name_10":"BEACN_PRES",
       "data_type":"character varying(1)"
@@ -170,9 +180,19 @@
       "data_type":"text"
    },
    {  
+      "column_name":"block",
+      "column_name_10":"BLOCK",
+      "data_type":"character varying(15)"
+   },
+   {  
       "column_name":"blue",
       "column_name_10":"BLUE",
       "data_type":"integer"
+   },
+   {  
+      "column_name":"bnd_pfi",
+      "column_name_10":"BND_PFI",
+      "data_type":"bigint"
    },
    {  
       "column_name":"border_class",
@@ -328,6 +348,11 @@
       "column_name":"create_date_ufi",
       "column_name_10":"CRDATE_UFI",
       "data_type":"date"
+   },
+   {  
+      "column_name":"cref_no",
+      "column_name_10":"CREFNO",
+      "data_type":"character varying(20)"
    },
    {  
       "column_name":"crown_status_code",
@@ -1119,6 +1144,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"lot_number",
+      "column_name_10":"LOT_NUMBER",
+      "data_type":"character varying(15)"
+   },
+   {  
       "column_name":"lu_code",
       "column_name_10":"LU_CODE",
       "data_type":"bigint"
@@ -1379,6 +1409,11 @@
       "data_type":"character varying(3)"
    },
    {  
+      "column_name":"p_number",
+      "column_name_10":"P_NUMBER",
+      "data_type":"character varying(15)"
+   },
+   {  
       "column_name":"page_size",
       "column_name_10":"PAGE_SIZE",
       "data_type":"text"
@@ -1387,6 +1422,11 @@
       "column_name":"parcel",
       "column_name_10":"PARCEL",
       "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"parcel_pfi",
+      "column_name_10":"PARCEL_PFI",
+      "data_type":"bigint"
    },
    {  
       "column_name":"parent_feature_id",
@@ -1610,6 +1650,11 @@
       "data_type":"text"
    },
    {  
+      "column_name":"portion",
+      "column_name_10":"PORTION",
+      "data_type":"character varying(15)"
+   },
+   {  
       "column_name":"postcode",
       "column_name_10":"postcode",
       "data_type":"character varying(4)"
@@ -1648,6 +1693,11 @@
       "column_name":"property_type_code",
       "column_name_10":"PR_TYPEC",
       "data_type":"character varying(1)"
+   },
+   {  
+      "column_name":"prop_num",
+      "column_name_10":"PROPNUM",
+      "data_type":"text"
    },
    {  
       "column_name":"public_land_group",
@@ -2009,6 +2059,11 @@
       "column_name":"sdrn_qinfo",
       "column_name_10":"SDRN_QINFO",
       "data_type":"text"
+   },
+   {  
+      "column_name":"sec",
+      "column_name_10":"SEC",
+      "data_type":"character varying(15)"
    },
    {  
       "column_name":"shoreline_datum",
