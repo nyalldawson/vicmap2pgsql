@@ -41,6 +41,7 @@ Currently supported datasets are:
 - Melway Map Indexes
 - VMLITE
 - VMPLAN
+- VMPROP
 - VMREFTAB
 - VMTRANS
 - VMVEG
