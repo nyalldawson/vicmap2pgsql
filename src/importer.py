@@ -13,10 +13,10 @@ class Importer():
         self.recreate = False
         self.skip_shape_import = False
 
-        with open('datasets\\column_mappings.json') as mappings:
+        with open(os.path.join('datasets', 'column_mappings.json')) as mappings:
             self.columnMappings = json.load(mappings)
 
-        with open('datasets\\table_mappings.json') as mappings:
+        with open(os.path.join('datasets', 'table_mappings.json')) as mappings:
             self.tableMappings = json.load(mappings)
 
     def importLayer(self, path, schema, table):

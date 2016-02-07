@@ -22,7 +22,7 @@ if __name__ == "__main__":
                         help='Skips the initial shp file import to a temporary table in the public schema. For debugging only.')
     args = parser.parse_args()
 
-    folder = args.folder.lower()
+    folder = args.folder  # .lower()
     if args.dataset:
         dataset = args.dataset.lower()
     else:
@@ -63,4 +63,5 @@ if __name__ == "__main__":
         path, file = os.path.split(d)
         layer = file[:-4]
 
-        i.importLayer(d, os.path.basename(os.path.normpath(folder)), layer)
+        i.importLayer(d, os.path.basename(
+            os.path.normpath(folder)).lower(), layer)
