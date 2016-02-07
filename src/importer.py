@@ -19,6 +19,14 @@ class Importer():
         with open(os.path.join('datasets', 'table_mappings.json')) as mappings:
             self.tableMappings = json.load(mappings)
 
+    def setupDatabase(self):
+        """ Sets up a database before starting the import, eg creating types, custom functions, etc """
+
+        with open(os.path.join('sql', 'postgis', '01_create_datatypes.sql'), 'r') as f:
+            sql = f.read()
+
+        self.db.runSqlNoTransaction(sql)
+
     def importLayer(self, path, schema, table):
         """ Imports the specified layer """
 
@@ -291,8 +299,12 @@ class Importer():
                 # column not in destination table, ignore
                 continue
 
-            source_cols.append('"{}"::{}'.format(
-                c['name'], matched_map['data_type']))
+            if 'transform' in matched_map.keys():
+                transform = matched_map['transform']
+            else:
+                transform = '"{}"::{}'.format(
+                    c['name'], matched_map['data_type'])
+            source_cols.append(transform)
             dest_cols.append(matched_map['column_name'])
 
         print 'Copying data to destination table'

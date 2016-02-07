@@ -2156,7 +2156,8 @@
    {  
       "column_name":"state",
       "column_name_10":"STATE",
-      "data_type":"text"
+      "data_type":"vicmap.state",
+	  "transform":"CASE WHEN upper(STATE) IN ('VIC','NSW','SA','ACT','QLD','WA','NT','TAS') THEN upper(STATE)::vicmap.state ELSE null END"
    },
    {  
       "column_name":"state_code",

@@ -57,6 +57,7 @@ if __name__ == "__main__":
     i = Importer(Database())
     i.recreate = recreate
     i.skip_shape_import = skip_shape_import
+    i.setupDatabase()
 
     for idx, d in enumerate(datasets):
         print "\n\nImporting {}/{}: {}\n-------------".format(idx + 1, len(datasets), d)
