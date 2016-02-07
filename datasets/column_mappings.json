@@ -267,7 +267,7 @@
    {  
       "column_name":"child_exists",
       "column_name_10":"CHILDEXIST",
-      "data_type":"character varying(1)"
+      "data_type":"boolean"
    },
    {  
       "column_name":"cl_tenure_pfi",
@@ -1016,7 +1016,7 @@
    {  
       "column_name":"add_is_primary",
       "column_name_10":"IS_PRIMARY",
-      "data_type":"character varying(3)"
+      "data_type":"boolean"
    },
    {  
       "column_name":"iucn_cat",
@@ -1051,12 +1051,12 @@
    {  
       "column_name":"label_address",
       "column_name_10":"LABEL_ADD",
-      "data_type":"character varying(1)"
+      "data_type":"boolean"
    },
    {  
       "column_name":"label_use_code",
       "column_name_10":"LABELUSE_C",
-      "data_type":"character varying(1)"
+      "data_type":"integer"
    },
    {  
       "column_name":"latitude",
@@ -1709,10 +1709,18 @@
       "column_name_10":"RAILGAUGEC",
       "data_type":"character varying(1)"
    },
-   {  
+   {
       "column_name":"rail_gauge",
       "column_name_10":"RAIL_GAUGE",
-      "data_type":"text"
+      "data_type":"integer"
+   },
+   {
+      "column_name":"rail_gauge",
+      "column_name_10":"RAIL_GAUGE",
+      "data_type":"text",
+      "table_names":[
+         "tr_rail_gauge"
+      ]
    },
    {  
       "column_name":"rec_code",
@@ -2038,7 +2046,7 @@
    {  
       "column_name":"scale_use_code",
       "column_name_10":"SCALE_USEC",
-      "data_type":"character varying(1)"
+      "data_type":"integer"
    },
    {  
       "column_name":"schedule",
@@ -2323,7 +2331,7 @@
    {  
       "column_name":"tourist_type",
       "column_name_10":"TOUR_TYPE",
-      "data_type":"character varying(3)"
+      "data_type":"boolean"
    },
    {  
       "column_name":"town",
@@ -2358,7 +2366,7 @@
    {  
       "column_name":"tracks_number_of",
       "column_name_10":"TRACKS_NO",
-      "data_type":"character varying(1)"
+      "data_type":"integer"
    },
    {  
       "column_name":"transferrable",
