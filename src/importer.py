@@ -128,7 +128,7 @@ class Importer():
         # Drop table if exists
         self.db.dropTable(temp_schema, table)
 
-        ogr2ogr_args = [os.getenv('OGR2OGR', 'C:\\OSGeo4W64\\bin\\ogr2ogr.exe'),
+        ogr2ogr_args = [os.getenv('OGR2OGR', 'ogr2ogr'),
                         '--config',
                         'PG_USE_COPY YES',  # faster copies
                         '-skipfailures',  # ignore encoding errors
