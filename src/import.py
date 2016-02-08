@@ -35,34 +35,43 @@ if __name__ == "__main__":
     if recreate:
         print "  Existing table definitions will be removed!"
 
-    datasets = []
+    layers = []
     if dataset:
+        dataset = os.path.basename(os.path.normpath(folder)).lower()
         shape_file = os.path.join(folder, 'layer', '{}.shp'.format(dataset))
         if os.path.isfile(shape_file):
-            datasets.append(shape_file)
+            layers.append({'dataset': dataset, 'layer': shape_file})
         else:
             dbf_file = os.path.join(folder, 'table', '{}.dbf'.format(dataset))
             if os.path.isfile(dbf_file):
-                datasets.append(dbf_file)
+                layers.append({'dataset': dataset, 'layer': dbf_file})
     else:
+        dataset = os.path.basename(os.path.normpath(folder)).lower()
         for s in glob.glob(os.path.join(folder, 'layer', '*.shp')):
-            datasets.append(s)
+            layers.append({'dataset': dataset, 'layer': s})
         for s in glob.glob(os.path.join(folder, 'table', '*.dbf')):
-            datasets.append(s)
+            layers.append({'dataset': dataset, 'layer': s})
 
-    print "\nDatasets to be processed are:"
-    for d in datasets:
-        print d
+    if len(layers) == 0:
+        for d in [name for name in os.listdir(folder)
+                  if os.path.isdir(os.path.join(folder, name))]:
+            for s in glob.glob(os.path.join(folder, d, 'layer', '*.shp')):
+                layers.append({'dataset': d.lower(), 'layer': s})
+            for s in glob.glob(os.path.join(folder, d, 'table', '*.dbf')):
+                layers.append({'dataset': d.lower(), 'layer': s})
+
+    print "\nLayers to be processed are:"
+    for l in layers:
+        print '{}: {}'.format(l['dataset'], l['layer'])
 
     i = Importer(Database())
     i.recreate = recreate
     i.skip_shape_import = skip_shape_import
     i.setupDatabase()
 
-    for idx, d in enumerate(datasets):
-        print "\n\nImporting {}/{}: {}\n-------------".format(idx + 1, len(datasets), d)
-        path, file = os.path.split(d)
+    for idx, l in enumerate(layers):
+        print "\n\nImporting {}/{}: {}\n-------------".format(idx + 1, len(layers), l['layer'])
+        path, file = os.path.split(l['layer'])
         layer = file[:-4]
 
-        i.importLayer(d, os.path.basename(
-            os.path.normpath(folder)).lower(), layer)
+        i.importLayer(l['layer'], l['dataset'], layer)
