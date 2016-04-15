@@ -104,6 +104,15 @@ class Importer():
             return True
         else:
             return False
+            
+    def tableTitle(self, schema, table):
+        """ Returns the optional title for a table """
+        matched_map = [m for m in self.tableMappings if m['dataset'].upper(
+        ) == schema.upper() and m['table'].upper() == table.upper()]
+        try:
+            return matched_map[0]['title']
+        except:
+            return None
 
     def addSerialId(self, schema, table):
         """ Returns whether a table should have a manually created serial primary key field, if so, returns the name
@@ -265,6 +274,11 @@ class Importer():
 
         assert self.db.createTable(
             dest_schema, dest_table, dest_columns), "Could not create table {}.{}".format(dest_schema, dest_table)
+            
+        # set table comment to title
+        title = self.tableTitle(dest_schema, dest_table)
+        if title:
+            self.db.setTableComment( dest_schema, dest_table, title )
 
         if geom_col:
             # Add spatial index

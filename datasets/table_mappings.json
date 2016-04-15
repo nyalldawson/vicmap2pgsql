@@ -1,59 +1,90 @@
 [  
    {  
       "dataset":"vmadd",
+      "table":"address",
+      "dest_table":"address",
+      "title":"Address"
+   },
+   {  
+      "dataset":"vmadd",
       "table":"address_1",
       "dest_table":"address",
-	  "append":true
+      "append":true
+   },
+   {  
+      "dataset":"vmadmin",
+      "table":"ad_lga_area_polygon",
+      "title":"Local Government Area Boundaries (Road) (polygon)"
+   },
+   {  
+      "dataset":"vmadmin",
+      "table":"ad_locality_area_polygon",
+      "title":"Locality Boundaries (Road) (polygon)"
    },
    {  
       "dataset":"vmadmin",
       "table":"ad_vicgov_region",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Victorian Government Regional Departmental Boundaries"
    },
    {  
       "dataset":"vmadmin",
       "table":"cfa_district",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Country Fire Authority (CFA) District Boundaries"
    },
    {  
       "dataset":"vmadmin",
       "table":"cfa_region",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Country Fire Authority (CFA) Region Boundaries"
    },
    {  
       "dataset":"vmadmin",
       "table":"cfa_tfb_district",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Country Fire Authority (CFA) Total Fire Ban Districts"
    },
    {  
       "dataset":"vmadmin",
       "table":"delwp_region",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Department of Environment, Land, Water and Planning Regional Boundaries"
    },
    {  
       "dataset":"vmadmin",
       "table":"lga_polygon",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Local Government Area Boundaries (Property) (polygon)"
+   },
+   {  
+      "dataset":"vmadmin",
+      "table":"locality_polygon",
+      "title":"Locality Boundaries (Property) (polygon)"
    },
    {  
       "dataset":"vmadmin",
       "table":"mfb_district",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Metropolitan Fire Brigade (MFB) District Boundaries"
    },
    {  
       "dataset":"vmadmin",
       "table":"mfb_region",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Metropolitan Fire Brigade (MFB) Region Boundaries"
    },
    {  
       "dataset":"vmadmin",
       "table":"parish_polygon",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Parish Boundaries (polygon)"
    },
    {  
       "dataset":"vmadmin",
       "table":"postcode_polygon",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Postcode Boundaries (polygon)"
    },
    {  
       "dataset":"vmadmin",
@@ -63,7 +94,8 @@
    {  
       "dataset":"vmadmin",
       "table":"state_assembly_2013",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Victorian Lower House Electoral Boundaries 2013"
    },
    {  
       "dataset":"vmadmin",
@@ -73,27 +105,37 @@
    {  
       "dataset":"vmadmin",
       "table":"state_council_2013",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Victorian Upper House Electoral Boundaries 2013"
    },
    {  
       "dataset":"vmadmin",
       "table":"township_polygon",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Township Boundaries (polygon)"
    },
    {  
       "dataset":"vmadmin",
       "table":"vicgov_region",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Victorian Government Regional Departmental Boundaries"
    },
    {  
       "dataset":"vmadmin",
       "table":"ward_2012",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Ward Boundaries 2012 (polygon)"
    },
    {  
       "dataset":"vmcltenure",
       "table":"cl_tenure_view",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Tenure Boundaries and Descriptors as per Crown Land Management"
+   },
+   {  
+      "dataset":"vmcltenure",
+      "table":"gov_road_polygon",
+      "title":"Government Road Polygons as per Crown Land Management"
    },
    {  
       "dataset":"vmcltenure",
@@ -102,34 +144,145 @@
       "id":"plm_id"
    },
    {  
+      "dataset":"vmelev",
+      "table":"el_contour",
+      "title":"Contour 1:25,000"
+   },
+   {  
+      "dataset":"vmelev",
+      "table":"el_grnd_surface_point",
+      "title":"Ground Surface Point 1:25,000"
+   },
+   {  
+      "dataset":"vmelev",
+      "table":"el_grnd_type_area_polygon",
+      "title":"Ground Type Area (Polygon) 1:25,000"
+   },
+   {  
+      "dataset":"vmelev",
+      "table":"el_grnd_type_point",
+      "title":"Ground Type Point 1:25,000"
+   },
+   {  
+      "dataset":"vmelev",
+      "table":"el_morphology_line",
+      "title":"Morphology Line 1:25,000"
+   },
+   {  
+      "dataset":"vmelev",
+      "table":"el_morphology_point",
+      "title":"Morphology Point 1:25,000"
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"building_point",
+      "title":"Building Point"
+   },
+   {  
       "dataset":"vmfeat",
       "table":"building_polygon",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Building Polygon"
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"foi_index_centroid",
+      "title":"FOI - Index Centroid"
    },
    {  
       "dataset":"vmfeat",
       "table":"foi_index_extent",
-      "force_multi":true
+      "force_multi":true,
+      "title":"FOI - Index Extent"
    },
    {  
       "dataset":"vmfeat",
       "table":"foi_line",
-      "force_multi":true
+      "force_multi":true,
+      "title":"FOI - Line"
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"foi_point",
+      "title":"FOI - Point"
    },
    {  
       "dataset":"vmfeat",
       "table":"foi_polygon",
-      "force_multi":true
+      "force_multi":true,
+      "title":"FOI - Polygon"
    },
    {  
       "dataset":"vmfeat",
       "table":"geo_area_hydro_label",
+      "title":"Hydrographic Labels",
       "force_multi":true
    },
    {  
       "dataset":"vmfeat",
       "table":"geo_area_relief_label",
+      "title":"Relief Labels (Polygon)",
       "force_multi":true
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"geo_point_relief_label",
+      "title":"Relief Labels (Point)"
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"gnr",
+      "title":"Register of Geographic Names"
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"locality_point",
+      "title":"FOI - Locality Point"
+   },
+   {  
+      "dataset":"vmfeat",
+      "table":"pl_place_area_polygon",
+      "title":"Place Area Polygon 1:25,000"
+   },
+   {  
+      "dataset":"vmhydro",
+      "table":"hy_navigation_point",
+      "title":"Navigation Point 1:25,000"
+   },
+   {  
+      "dataset":"vmhydro",
+      "table":"hy_navigation_line",
+      "title":"Navigation Line 1:25,000"
+   },
+   {  
+      "dataset":"vmhydro",
+      "table":"hy_water_area_polygon",
+      "title":"Water Area (polygon)"
+   },
+   {  
+      "dataset":"vmhydro",
+      "table":"hy_water_struct_area_polygon",
+      "title":"Water Structure Area (polygon) 1:25,000"
+   },
+   {  
+      "dataset":"vmhydro",
+      "table":"hy_water_struct_line",
+      "title":"Water Structure Line 1:25,000"
+   },
+   {  
+      "dataset":"vmhydro",
+      "table":"hy_water_struct_point",
+      "title":"Water Structure Point 1:25,000"
+   },
+   {  
+      "dataset":"vmhydro",
+      "table":"hy_watercourse",
+      "title":"Watercourse Network 1:25,000"
+   },
+   {  
+      "dataset":"vmhydro",
+      "table":"hy_water_point",
+      "title":"Water Point 1:25,000"
    },
    {  
       "dataset":"vmimagery",
@@ -139,47 +292,350 @@
    },
    {  
       "dataset":"vmindex",
+      "table":"fr_framework_area_line",
+      "title":"Framework (Line) 1:25,000"
+   },
+   {  
+      "dataset":"vmindex",
+      "table":"fr_framework_area_polygon",
+      "title":"Framework (Polygon) 1:25,000"
+   },
+   {  
+      "dataset":"vmindex",
+      "table":"vicmap_mapindex_100d",
+      "title":"Vicmap Topographic 1:100,000 MGA Mapsheet Boundaries - Double Format"
+   },
+   {  
+      "dataset":"vmindex",
+      "table":"vicmap_mapindex_25s",
+      "title":"Vicmap Topographic 1:25,000 MGA Mapsheet Boundaries - Single Format"
+   },
+   {  
+      "dataset":"vmindex",
+      "table":"vicmap_mapindex_25d",
+      "title":"Vicmap Topographic 1:25,000 MGA Mapsheet Boundaries - Double Format"
+   },
+   {  
+      "dataset":"vmindex",
+      "table":"vicmap_mapindex_30da3",
+      "title":"Vicmap Topographic 1:30,000 format MGA Mapsheet Boundaries - A3"
+   },
+   {  
+      "dataset":"vmindex",
+      "table":"vicmap_mapindex_30sa4",
+      "title":"Vicmap Topographic 1:30,000 format MGA Mapsheet Boundaries - A4"
+   },
+   {  
+      "dataset":"vmindex",
+      "table":"vicmap_mapindex_50d",
+      "title":"Vicmap Topographic 1:50,000 MGA Mapsheet Boundaries - Double Format"
+   },
+   {  
+      "dataset":"vmindex",
+      "table":"vicmap_mapindex_50s",
+      "title":"Vicmap Topographic 1:50,000 MGA Mapsheet Boundaries - Single Format"
+   },
+   {  
+      "dataset":"vmindex",
+      "table":"vicmap_mapindex_special",
+      "title":"Vicmap Topographic 25,000 AMG Mapsheet Boundaries - Printed Map Index pre 2000"
+   },
+   {  
+      "dataset":"vmindex",
       "table":"vicroads_mapindex_250_ed8",
       "force_multi":true
    },
    {  
       "dataset":"vmlite",
+      "table":"vmlite_built_up_area",
+      "title":"Statewide Place Area boundaries, polygon - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_forest_su2",
+      "title":"Statewide Forest boundaries, polygon - 1:2 million to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_forest_su3",
+      "title":"Statewide Forest boundaries, polygon - 1:1 million to 1:2 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_forest_su5",
+      "title":"Statewide Forest boundaries, polygon - 1:250,000 to 1:1 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_hy_watercourse",
+      "title":"Statewide Watercourse Network, line - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_geo_area_label",
+      "title":"Statewide Geographic Area boundaries for labelling, polygon - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_geo_point_label",
+      "title":"Statewide Geographic features for labelling, point - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_hy_water_area",
+      "title":"Statewide Water Areas, polygon - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_lga",
+      "title":"Local Government Area boundaries, polygon - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_locality",
+      "title":"Place Names, point - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_locality_polygon",
+      "title":"Locality boundaries, polygon - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
       "table":"vmlite_postcode_polygon",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Postcode boundaries, polygon - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_public_land_su3",
+      "title":"Statewide Public Land Classification boundaries, polygon - 1:1 million to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_public_land_su5",
+      "title":"Statewide Public Land Classification boundaries, polygon - 1:250,000 to 1:2 million"
    },
    {  
       "dataset":"vmlite",
       "table":"vmlite_vicgov_region",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Victorian Government Regional Departmental Boundaries, polygon - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_tr_airport",
+      "title":"Airport, point - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_tr_rail",
+      "title":"Statewide Rail Network, line - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_tr_rail_station",
+      "title":"Statewide Railway Stations, point - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_tr_road",
+      "title":"Statewide Road Network, line - 1:250,000 to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_victoria_line_su2",
+      "title":"Simplified outline of Victoria and adjoining States, line - 1:2 million to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_victoria_line_su5",
+      "title":"Simplified outline of Victoria and adjoining States, line - 1:250,000 to 1:2 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_victoria_polygon_su2",
+      "title":"Simplified outline of Victoria and adjoining States, polygon - 1:2 million to 1:5 million"
+   },
+   {  
+      "dataset":"vmlite",
+      "table":"vmlite_victoria_polygon_su5",
+      "title":"Simplified outline of Victoria and adjoining States, polygon - 1:250,000 to 1:2 million"
+   },
+   {  
+      "dataset":"vmplan",
+      "table":"plan_codelist",
+      "title":"Planning Scheme Codelist"
    },
    {  
       "dataset":"vmplan",
       "table":"plan_overlay",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Planning Scheme Overlay"
+   },
+   {  
+      "dataset":"vmplan",
+      "table":"plan_uga",
+      "title":"Planning Scheme Urban Growth Area"
    },
    {  
       "dataset":"vmplan",
       "table":"plan_ugb",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Planning Scheme Urban Growth Boundary"
    },
    {  
       "dataset":"vmplan",
       "table":"plan_zone",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Planning Scheme Zones"
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"annotation_text",
+      "title":"Annotation Text"
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"cad_area_bdy",
+      "title":"Cadastral Area Boundary"
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"centroid",
+      "title":"Centroid"
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"easement",
+      "title":"Easement"
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"parcel",
+      "title":"Parcel Aspatial Table"
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"parcel_cad_area_bdy",
+      "title":"Parcel Cadastral Area Boundary Aspatial Table"
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"parcel_property",
+      "title":"Parcel Property Aspatial Table"
    },
    {  
       "dataset":"vmprop",
       "table":"parcel_view",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Parcel View"
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"property",
+      "title":"Property Aspatial Table"
+   },
+   {  
+      "dataset":"vmprop",
+      "table":"property_cad_area_bdy",
+      "title":"Property Cadastral Area Boundary Aspatial Table"
    },
    {  
       "dataset":"vmprop",
       "table":"property_view",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Property View"
    },
    {  
       "dataset":"vmprop",
       "table":"road_casement_polygon",
-      "force_multi":true
+      "force_multi":true,
+      "title":"Road Casement Polygon"
+   },
+   {  
+      "dataset":"vmreftab",
+      "table":"fr_state",
+      "title":"Framework - State Reference Table"
+   },
+   {  
+      "dataset":"vmreftab",
+      "table":"lga",
+      "title":"Local Government Area Reference Table"
+   },
+   {  
+      "dataset":"vmreftab",
+      "table":"locality",
+      "title":"Locality Reference Table"
+   },
+   {  
+      "dataset":"vmreftab",
+      "table":"parish",
+      "title":"Parish Reference Table"
+   },
+   {  
+      "dataset":"vmreftab",
+      "table":"pr_spi",
+      "title":"Property - Standard Parcel Identifier (SPI) reliability Reference Table"
+   },
+   {  
+      "dataset":"vmreftab",
+      "table":"township",
+      "title":"Township Reference Table"
+   },
+   {  
+      "dataset":"vmreftab",
+      "table":"transform66_94",
+      "title":"Data set to test transformation between AGD66 and GDA94 coordinates"
+   },
+   {  
+      "dataset":"vmtrans",
+      "table":"tr_air_infra_point",
+      "title":"Airport Infrastucture Point"
+   },
+   {  
+      "dataset":"vmtrans",
+      "table":"tr_airport_infrastructure",
+      "title":"Airport Infrastructure"
+   },
+   {  
+      "dataset":"vmtrans",
+      "table":"tr_air_infra_area_polygon",
+      "title":"Airport Infrastucture Area (polygon)"
+   },
+   {  
+      "dataset":"vmtrans",
+      "table":"tr_airport_area_polygon",
+      "title":"Airport Area (polygon)"
+   },
+   {  
+      "dataset":"vmtrans",
+      "table":"tr_rail",
+      "title":"Rail Network"
+   },
+   {  
+      "dataset":"vmtrans",
+      "table":"tr_rail_infrastructure",
+      "title":"Rail Infrastructure"
+   },
+   {  
+      "dataset":"vmtrans",
+      "table":"tr_road",
+      "title":"Road Network"
+   },
+   {  
+      "dataset":"vmtrans",
+      "table":"tr_road_infrastructure",
+      "title":"Road Infrastructure"
+   },
+   {  
+      "dataset":"vmtrans",
+      "table":"tr_road_locality",
+      "title":"Aspatial Table - Road Locality Table"
+   },
+   {  
+      "dataset":"vmtrans",
+      "table":"tr_road_locality_section",
+      "title":"Aspatial Table - Road Locality Section Table"
    }
 ]

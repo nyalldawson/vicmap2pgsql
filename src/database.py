@@ -42,6 +42,10 @@ class Database():
             self.host, self.database, self.user, self.password, self.port)
         return psycopg2.connect(conn_string)
 
+    def encodeLiteral(self, string):
+        """Encodes a string literal"""
+        return string.replace("'","''")
+        
     def encodeTableName(self, schema, table):
         """Encodes a table name to a safe string to use in a query"""
         return '"{}"."{}"'.format(schema, table)
@@ -101,6 +105,11 @@ class Database():
 
         return self.runSql('CREATE TABLE {} ({})'.format(self.encodeTableName(schema, table), col_definition))
 
+    def setTableComment(self, schema, table, comment):
+        """Sets the comment for the specified table
+        """
+        return self.runSql('COMMENT ON TABLE {} IS \'{}\''.format(self.encodeTableName(schema, table), self.encodeLiteral(comment)))
+    
     def dropTable(self, schema, table, cascade=False):
         """ Drops a table from the database """
         if cascade:
