@@ -1,5 +1,26 @@
 [  
    {  
+      "dataset":"crownland",
+      "table":"plm25",
+      "force_multi":true,
+      "create_serial_id":"id"
+   },
+   {
+      "dataset":"ptv",
+      "table":"ptv_train_track_centreline",
+	  "create_serial_id":"id"
+   },
+   {
+      "dataset":"ptv",
+      "table":"ptv_train_station",
+	  "create_serial_id":"id"
+   },
+   {
+      "dataset":"ptv",
+      "table":"ptv_tram_stop",
+      "create_serial_id":"id"
+   },
+   {
       "dataset":"vmadd",
       "table":"address",
       "dest_table":"address",
@@ -211,6 +232,11 @@
       "table":"foi_polygon",
       "force_multi":true,
       "title":"FOI - Polygon"
+   },
+   {
+      "dataset":"vmfeat",
+      "table":"geomark_polygon",
+      "force_multi":true
    },
    {  
       "dataset":"vmfeat",

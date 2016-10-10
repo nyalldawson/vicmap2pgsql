@@ -62,6 +62,7 @@ the initial shapefile import step can be time-consuming.
 
 Currently supported datasets are:
 
+- PTV
 - VMADD
 - VMADMIN
 - VMCLTENURE

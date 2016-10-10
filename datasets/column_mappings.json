@@ -554,6 +554,11 @@
       "column_name_10":"EFFEC_TO",
       "data_type":"date"
    },
+   {
+      "column_name":"electric",
+      "column_name_10":"ELECTRIC",
+      "data_type":"text"
+   },
    {  
       "column_name":"elev_accuracy",
       "column_name_10":"ELEVACC",
@@ -577,6 +582,11 @@
    {  
       "column_name":"ezi_road_name",
       "column_name_10":"EZI_RDNAME",
+      "data_type":"text"
+   },
+   {
+      "column_name":"facility",
+      "column_name_10":"FACILITY",
       "data_type":"text"
    },
    {  
@@ -793,6 +803,11 @@
       "column_name":"fwidth",
       "column_name_10":"FWIDTH",
       "data_type":"real"
+   },
+   {
+      "column_name":"gauge",
+      "column_name_10":"GAUGE",
+      "data_type":"text"
    },
    {  
       "column_name":"gazetted_locality_name",
@@ -1222,6 +1237,11 @@
       "column_name":"mesh_block",
       "column_name_10":"MESH_BLOCK",
       "data_type":"character varying(11)"
+   },
+   {
+      "column_name":"met_stopid",
+      "column_name_10":"MET_STOPID",
+      "data_type":"text"
    },
    {  
       "column_name":"method",
@@ -2028,6 +2048,11 @@
       "data_type":"bigint",
       "primary_key_priority":3
    },
+   {
+      "column_name":"rtusestop",
+      "column_name_10":"RTUSESTOP",
+      "data_type":"text"
+   },
    {  
       "column_name":"runway_number",
       "column_name_10":"RUNWAY_NO",
@@ -2169,6 +2194,16 @@
       "column_name_10":"STATE_NAME",
       "data_type":"text"
    },
+   {
+      "column_name":"station",
+      "column_name_10":"STATION",
+      "data_type":"text"
+   },
+   {
+      "column_name":"station_type",
+      "column_name_10":"STATIONTYP",
+      "data_type":"text"
+   },
    {  
       "column_name":"status",
       "column_name_10":"STATUS",
@@ -2182,6 +2217,21 @@
    {  
       "column_name":"stgame_res",
       "column_name_10":"STGAME_RES",
+      "data_type":"text"
+   },
+   {
+      "column_name":"stop_mode",
+      "column_name_10":"STOPMODE",
+      "data_type":"text"
+   },
+   {
+      "column_name":"stop_number",
+      "column_name_10":"STOPNUMBER",
+      "data_type":"text"
+   },
+   {
+      "column_name":"stopspec",
+      "column_name_10":"STOPSPEC",
       "data_type":"text"
    },
    {  
@@ -2368,6 +2418,11 @@
       "column_name":"tracks_number_of",
       "column_name_10":"TRACKS_NO",
       "data_type":"integer"
+   },
+   {
+      "column_name":"tramtrkid",
+      "column_name_10":"tramtrkid",
+      "data_type":"text"
    },
    {  
       "column_name":"transferrable",
@@ -2647,6 +2702,11 @@
       "column_name":"zone",
       "column_name_10":"ZONE",
       "data_type":"int"
+   },
+   {
+      "column_name":"zones",
+      "column_name_10":"ZONES",
+      "data_type":"text"
    },
    {  
       "column_name":"z_level",
