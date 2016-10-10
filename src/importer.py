@@ -13,16 +13,18 @@ class Importer():
         self.recreate = False
         self.skip_shape_import = False
 
-        with open(os.path.join('datasets', 'column_mappings.json')) as mappings:
+        self.base_dir = os.path.dirname(os.path.realpath(__file__))
+
+        with open(os.path.join(self.base_dir, '..', 'datasets', 'column_mappings.json')) as mappings:
             self.columnMappings = json.load(mappings)
 
-        with open(os.path.join('datasets', 'table_mappings.json')) as mappings:
+        with open(os.path.join(self.base_dir, '..', 'datasets', 'table_mappings.json')) as mappings:
             self.tableMappings = json.load(mappings)
 
     def setupDatabase(self):
         """ Sets up a database before starting the import, eg creating types, custom functions, etc """
 
-        with open(os.path.join('sql', 'postgis', '01_create_datatypes.sql'), 'r') as f:
+        with open(os.path.join(self.base_dir, '..', 'sql', 'postgis', '01_create_datatypes.sql'), 'r') as f:
             sql = f.read()
 
         self.db.runSqlNoTransaction(sql)
